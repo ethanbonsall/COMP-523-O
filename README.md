@@ -1,4 +1,4 @@
-# Ethan Repo
+# TEAM O - COMP 523
 
 ##  Tech Stack
 
@@ -7,8 +7,6 @@
 - **Backend**: Supabase (used for project data and storage)
 - **Deployment**: Vercel
 - **Language**: TypeScript
-
-## Screenshots
 
 ## Running Locally
 
