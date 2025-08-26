@@ -10,8 +10,7 @@
 
 ## Running Locally
 
-    git clone https://github.com/ethanbonsall/ethans-web-repo.git
-```
+    git clone https://github.com/ethanbonsall/COMP-523-O.git
 cd web
 ```
 ```
