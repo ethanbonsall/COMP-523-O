@@ -14,11 +14,11 @@ const contacts: Contact[] = [
 
 const BottomBar = () => {
   return (
-    <div className="flex flex-row bg-primary text-text w-full justify-between py-16 px-8">
-      <h2 className="text-2xl font-bold ">Contact Us</h2>
-      <div className="flex gap-12 ">
+    <div className="flex flex-col md:flex-row bg-primary text-text w-full justify-between py-16 px-8">
+      <h2 className="text-2xl font-bold mb-4 md:mb-0 ">Contact Us</h2>
+      <div className="gap-12">
         {contacts.map((contact, index) => (
-          <div key={index} className="text-left">
+          <div key={index} className="text-left mb-4 md:mb-0">
             <p className="text-lg font-bold">{contact.name}</p>
             <button
               className="text-md text-text underline lowercase"
