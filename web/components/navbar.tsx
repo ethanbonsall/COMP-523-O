@@ -15,10 +15,25 @@ export default function Navbar() {
   return (
     <nav className="bg-primary text-text p-6 flex sticky top-0 justify-between w-full z-50">
       {/* Left Logo / Title */}
-      <div className="flex flex-col text-2xl font-bold">
+      <button
+        className="flex flex-col text-2xl font-bold"
+        onClick={() => {
+          const root = document.documentElement;
+          const currentTheme = root.classList.contains("dark")
+            ? "dark"
+            : "light";
+          if (currentTheme === "light") {
+            root.classList.add("dark");
+            root.classList.remove("light");
+          } else {
+            root.classList.add("light");
+            root.classList.remove("dark");
+          }
+        }}
+      >
         <h1>COMP 523</h1>
         <h1>Team O</h1>
-      </div>
+      </button>
 
       {/* Desktop Nav */}
       <div className="hidden md:flex gap-x-10 justify-center self-center">
