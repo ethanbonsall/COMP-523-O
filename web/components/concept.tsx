@@ -1,9 +1,9 @@
 const Concept = () => {
   return (
     <div className="w-full min-h-screen bg-secondary text-text flex items-center justify-center">
-      <div className="max-w-4xl w-full p-6 bg-background shadow-md rounded-lg">
+      <div className="max-w-4xl w-full p-10 bg-background shadow-md rounded-lg">
         <h1 className="text-3xl font-bold text-accent mb-4">Project Goal</h1>
-        <p className="text-text leading-relaxed">
+        <p className="text-text text-xl leading-relaxed">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
