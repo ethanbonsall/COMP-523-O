@@ -4,7 +4,7 @@ const Journal = () => {
   return (
     <>
       <NavBar />
-      <div className="bg-background flex flex-col items-center w-full font-roboto min-h-screen">
+      <div className="bg-background flex flex-col items-center text-text w-full font-roboto min-h-screen">
         <p className="text-4xl mt-[5%]"> Meeting Logs </p>
         <br></br>
         <p>
