@@ -11,11 +11,10 @@
 ## Running Locally
 
     git clone https://github.com/ethanbonsall/COMP-523-O.git
-cd web
-```
-```
-npm install
-```
-```
-npm run dev
-```
+    
+    cd web
+
+    npm install
+
+    npm run dev
+
