@@ -147,17 +147,3 @@ button:active {
 html {
   scroll-behavior: smooth;
 }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  
-}
-
-ul div {
-  display: inline-block;
-  padding: 15px; 
-}
-
