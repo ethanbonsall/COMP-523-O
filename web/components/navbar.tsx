@@ -67,7 +67,7 @@ export default function Navbar() {
             <ChevronDown className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:rotate-180" />
           </button>
           <div className="absolute top-full left-0 hidden group-hover:flex flex-col bg-secondary text-text font-bold rounded-lg shadow-lg p-1 min-w-full whitespace-nowrap z-50">
-            <Link href="/Team" className="hover:bg-secondary-400 p-2 rounded">
+            <Link href="/team" className="hover:bg-secondary-400 p-2 rounded">
               Meet the Team
             </Link>
             <Link href="/rules" className="hover:bg-secondary-400 p-2 rounded">
