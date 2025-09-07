@@ -6,13 +6,9 @@ const Concept = () => {
           Project Goal
         </h1>
         <p className="text-text text-xl leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          The Pediatric Blue Book, or PBB, is a web application designed to transform how pediatric dietitians access and apply nutritional information. Currently, dietitians
+          often must juggle outdated manuals, scattered online materials, and time-consuming manual calculations. PBB provides a streamlined, digital platform to help dietitians create precise and personalized nutrition 
+          plans faster and easier. By reducing errors, managing inefficiencies, and supporting evidence-based decision making, the Pediatric Blue Book helps dietitians focus on giving children the best chance to grow, recover, and thrive. 
         </p>
       </div>
     </div>

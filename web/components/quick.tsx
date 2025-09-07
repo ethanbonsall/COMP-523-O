@@ -4,7 +4,7 @@ const Quick = () => {
       <h1 className="text-4xl font-bold">TEAM O</h1>
       <hr className="bg-text w-3/4 md:w-1/2" style={{ height: "2px" }}></hr>
       <p className="text-2xl font-semibold">
-        This is where we will pull people in with our exciting project!
+        The Pediatric Blue Book (PBB)
       </p>
     </section>
   );
