@@ -105,7 +105,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        <Link href="/contact" className="hover:text-text-200 font-bold">
+        <Link href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu" className="hover:text-text-200 font-bold">
           CONTACT US
         </Link>
       </div>
@@ -200,7 +200,7 @@ export default function Navbar() {
               )}
             </div>
 
-            <Link className="font-bold" href="/contact">
+            <Link className="font-bold" href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu">
               CONTACT US
             </Link>
           </div>
