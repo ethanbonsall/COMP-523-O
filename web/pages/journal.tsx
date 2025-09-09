@@ -22,32 +22,37 @@ const Journal = () => {
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 4th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>
-            Planning for client meeting on 8/5 
-          </li>
-          <li>
-            Draft questions for client meeting
-          </li>
-          <li>
-            Action items before next meeting - update website 
-          </li>
+          <li>Planning for client meeting on 8/5</li>
+          <li>Draft questions for client meeting</li>
+          <li>Action items before next meeting - update website</li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 5th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>
-            Client aims to streamline pediatric formula and nutrition calculations, replacing time-consuming manual processes.
+            Client aims to streamline pediatric formula and nutrition
+            calculations, replacing time-consuming manual processes.
           </li>
           <li>
-            System should allow dieticians to calculate energy, fluids, and nutrients for children, including complex recipes for kids who aren't growing normally, using standardized equations and formulas.
+            System should allow dieticians to calculate energy, fluids, and
+            nutrients for children, including complex recipes for kids who
+            aren&apos;t growing normally, using standardized equations and
+            formulas.
           </li>
           <li>
-            Users inclde dieticians, supervisors, and med students - will always be healthcare administrators.  
+            Users inclde dieticians, supervisors, and med students - will always
+            be healthcare administrators.
           </li>
-          <li>Requires a centralized, up-to-date database of formulas and ingredients, with administrative controls for data entry, validation, and activation/deactivation.</li>
           <li>
-          Client will provide formulas and information on nutrients and key growth measures; weekly meetings are scheduled to align on requirements. 
+            Requires a centralized, up-to-date database of formulas and
+            ingredients, with administrative controls for data entry,
+            validation, and activation/deactivation.
+          </li>
+          <li>
+            Client will provide formulas and information on nutrients and key
+            growth measures; weekly meetings are scheduled to align on
+            requirements.
           </li>
         </div>
       </div>
