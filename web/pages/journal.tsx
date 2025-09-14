@@ -20,11 +20,19 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
-          <p className="text-xl"> Sept 4th, 2025 </p>
+          <p className="text-xl"> Sept 12th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>Planning for client meeting on 8/5</li>
+          <li>Client prefers an autocomplete search function - stretch goal of supporting multiple options for search</li>
+          <li>Formula Page: Allow recipe manipulation, flexible batch sizes, and user-defined total volume. Support household measures as well as scoops and include liquid formula in milliliters.</li>
+          <li>Advanced Feature: Enable mixing multiple formulas.</li>
+          <li>Data requirements: client will provide nutrient cutoff tables and formula lookup details. </li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 11th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Went over wireframes</li>
           <li>Draft questions for client meeting</li>
-          <li>Action items before next meeting - update website</li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
@@ -41,7 +49,7 @@ const Journal = () => {
             formulas.
           </li>
           <li>
-            Users inclde dieticians, supervisors, and med students - will always
+            Users include dieticians, supervisors, and med students - will always
             be healthcare administrators.
           </li>
           <li>
@@ -55,6 +63,15 @@ const Journal = () => {
             requirements.
           </li>
         </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 4th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Planning for client meeting on 9/5</li>
+          <li>Draft questions for client meeting</li>
+          <li>Action items before next meeting - update website</li>
+        </div>
+        
       </div>
       <BottomBar />
     </>
