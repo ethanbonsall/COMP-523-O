@@ -45,7 +45,7 @@ export default function Navbar() {
           </button>
           <div className="absolute top-full left-0 hidden group-hover:flex flex-col bg-secondary text-text font-bold rounded-lg shadow-lg p-1 min-w-full whitespace-nowrap z-50">
             <Link
-              href="/Specifications"
+              href="/specifications"
               className="hover:bg-secondary-400 p-2 rounded"
             >
               D1. Specifications
@@ -141,7 +141,7 @@ export default function Navbar() {
               </button>
               {openMenu === "deliverables" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
-                  <Link href="/Specifications">D1. Specifications</Link>
+                  <Link href="/specifications">D1. Specifications</Link>
                   <Link href="/Prototype">D2. Prototype</Link>
                 </div>
               )}
