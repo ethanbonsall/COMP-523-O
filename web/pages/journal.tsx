@@ -32,7 +32,7 @@ const Journal = () => {
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 25th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>Went over client`&apos;`s feedback on wireframe and finalized specification document.</li>
+          <li>Went over client&apos;s feedback on wireframe and finalized specification document.</li>
           <li>Created project board on Jira and delegated tasks for midterm presentation.</li>
         </div>
         <br></br>
