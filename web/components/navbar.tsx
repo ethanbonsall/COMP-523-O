@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="bg-primary text-text p-6 flex sticky top-0 justify-between w-full z-50">
       {/* Left Logo / Title */}
-      <button
+      <Link
         className="flex flex-col text-2xl font-bold"
         onClick={() => {
           const root = document.documentElement;
@@ -29,11 +29,10 @@ export default function Navbar() {
             root.classList.add("light");
             root.classList.remove("dark");
           }
-        }}
-      >
+        } } href="/"     >
         <h1>COMP 523</h1>
         <h1>Team O</h1>
-      </button>
+      </Link>
 
       {/* Desktop Nav */}
       <div className="hidden md:flex gap-x-10 justify-center self-center">

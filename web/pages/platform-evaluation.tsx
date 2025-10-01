@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar";
 import Head from "next/head";
 
 const PlatformEvaluation = () => {
@@ -6,6 +7,7 @@ const PlatformEvaluation = () => {
       <Head>
         <title>Development Platform Evaluation</title>
       </Head>
+      <Navbar />
       <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 p-6 md:p-12">
         <div className="max-w-5xl mx-auto space-y-10">
           

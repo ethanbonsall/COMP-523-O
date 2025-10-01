@@ -1,3 +1,4 @@
+import Navbar from "@/components/navbar";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -7,6 +8,7 @@ const Home = () => {
       <Head>
         <title>Pediatric Blue Book</title>
       </Head>
+      <Navbar />
       <main className="flex min-h-screen items-center justify-center bg-background text-center">
         <Link
           href="https://www.pediatricbluebook.com"
