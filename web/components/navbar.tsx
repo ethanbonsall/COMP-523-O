@@ -58,7 +58,7 @@ export default function Navbar() {
             </Link>
             <hr />
             <Link
-              href="/Prototype"
+              href="/prototype"
               className="hover:bg-secondary-400 p-2 rounded"
             >
               D3. Prototype
