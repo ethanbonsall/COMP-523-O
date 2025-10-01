@@ -4,7 +4,7 @@ const Journal = () => {
   return (
     <>
       <NavBar />
-      <div className="bg-background flex flex-col items-center text-text w-full font-roboto min-h-screen">
+      <div className="bg-background flex flex-col items-center text-text w-full font-roboto min-h-screen pb-[15%]">
         <p className="text-4xl mt-[5%]"> Meeting Logs </p>
         <br></br>
         <p>
@@ -20,11 +20,44 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
-          <p className="text-xl"> Sept 4th, 2025 </p>
+          <p className="text-xl"> Sept 26th, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>Showed client wireframe that has been adjusted according to their feedback.</li>
+          <li>For the formula calculator page, user should be able to see additional information such as what type of source the formula is.</li>
+          <li>Need to create wireframe for admin side.</li>
+          <li>Admin users should be able to put in data into the formula lookup table. Stretch goal: web scraping for data.</li>
+          <li>Showed client demo of log-in and sign up page and discusses mobile accessibility.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 25th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>Planning for client meeting on 8/5</li>
+          <li>Went over client&apos;s feedback on wireframe and finalized specification document.</li>
+          <li>Created project board on Jira and delegated tasks for midterm presentation.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 18th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Reviewed user stories, functional, requirements, and non-functional requirements for specification document.</li>
+          <li>Delegated work for wireframe.</li>
+          <li>Questions for client: notifications, mobile accessibility, number of concurrent users.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 12th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Client prefers an autocomplete search function - stretch goal of supporting multiple options for search</li>
+          <li>Formula Page: Allow recipe manipulation, flexible batch sizes, and user-defined total volume. Support household measures as well as scoops and include liquid formula in milliliters.</li>
+          <li>Advanced Feature: Enable mixing multiple formulas.</li>
+          <li>Data requirements: client will provide nutrient cutoff tables and formula lookup details. </li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 11th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Went over wireframes</li>
           <li>Draft questions for client meeting</li>
-          <li>Action items before next meeting - update website</li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
@@ -41,7 +74,7 @@ const Journal = () => {
             formulas.
           </li>
           <li>
-            Users inclde dieticians, supervisors, and med students - will always
+            Users include dieticians, supervisors, and med students - will always
             be healthcare administrators.
           </li>
           <li>
@@ -55,6 +88,15 @@ const Journal = () => {
             requirements.
           </li>
         </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Sept 4th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Planning for client meeting on 9/5</li>
+          <li>Draft questions for client meeting</li>
+          <li>Action items before next meeting - update website</li>
+        </div>
+        
       </div>
       <BottomBar />
     </>
