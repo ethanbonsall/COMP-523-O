@@ -52,10 +52,17 @@ export default function Navbar() {
             </Link>
             <hr />
             <Link
+              href="/platform-evaluation"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              D2. Platform Specifications
+            </Link>
+            <hr />
+            <Link
               href="/Prototype"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-              D2. Prototype
+              D3. Prototype
             </Link>
           </div>
         </div>
