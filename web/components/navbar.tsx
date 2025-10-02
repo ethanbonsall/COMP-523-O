@@ -63,6 +63,12 @@ export default function Navbar() {
             >
               D3. Architecture Diagram
             </Link>
+            <Link
+              href="/system-metaphor"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              D4. System Metaphor
+            </Link>
           </div>
         </div>
 
@@ -150,6 +156,7 @@ export default function Navbar() {
                   <Link href="/specifications">D1. Specifications</Link>
                   <Link href="/platform-evaluation">D2. Platform Evaluation</Link>
                   <Link href="/architecture-diagram">D3. Architecture Diagram</Link>
+                  <Link href="/system-metaphor">D4. System Metaphor</Link>
 
                 </div>
               )}
