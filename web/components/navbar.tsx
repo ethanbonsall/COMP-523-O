@@ -58,10 +58,10 @@ export default function Navbar() {
             </Link>
             <hr />
             <Link
-              href="/prototype"
+              href="/architecture-diagram"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-              D3. Prototype
+              D3. Architecture Diagram
             </Link>
           </div>
         </div>
@@ -148,7 +148,9 @@ export default function Navbar() {
               {openMenu === "deliverables" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
                   <Link href="/specifications">D1. Specifications</Link>
-                  <Link href="/Prototype">D2. Prototype</Link>
+                  <Link href="/platform-evaluation">D2. Platform Evaluation</Link>
+                  <Link href="/architecture-diagram">D3. Architecture Diagram</Link>
+
                 </div>
               )}
             </div>
