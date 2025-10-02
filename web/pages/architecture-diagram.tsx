@@ -20,6 +20,8 @@ const ArchitectureDiagram = () => {
               Visual representation of the major components of our system and how those components are related and interact.
             </p>
             <br></br>
+            <p className = "font-bold"> Client-Server System</p>
+            <br></br>
             <img src = "/images/Arch_DiagramV0.jpg" alt = "Architecture Diagram"></img>
           </section>
           </div>
