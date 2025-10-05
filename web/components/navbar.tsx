@@ -63,12 +63,20 @@ export default function Navbar() {
             >
               D3. Architecture Diagram
             </Link>
+            <hr/>
             <Link
               href="/system-metaphor"
               className="hover:bg-secondary-400 p-2 rounded"
             >
               D4. System Metaphor
             </Link>
+            <hr/>
+            <Link
+              href="/prototype"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              D5. Prototype
+             </Link>
           </div>
         </div>
 
@@ -157,6 +165,7 @@ export default function Navbar() {
                   <Link href="/platform-evaluation">D2. Platform Evaluation</Link>
                   <Link href="/architecture-diagram">D3. Architecture Diagram</Link>
                   <Link href="/system-metaphor">D4. System Metaphor</Link>
+                  <Link href="/prototype">D5. Prototype</Link>
 
                 </div>
               )}
@@ -199,7 +208,7 @@ export default function Navbar() {
               MEETING JOURNAL
             </Link>
 
-            {/* Final Deliverables */}
+            {/* Presentations */}
             <div>
               <button
                 onClick={() => toggleMenu("final")}
