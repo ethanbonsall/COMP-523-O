@@ -107,12 +107,12 @@ export default function Navbar() {
 
         <div className="relative group">
           <button className="flex flex-row items-center">
-            Final Deliverables
+            Presentations
             <ChevronDown className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:rotate-180" />
           </button>
           <div className="absolute top-full left-0 hidden group-hover:flex flex-col bg-secondary text-text font-bold rounded-lg shadow-lg p-1 min-w-full whitespace-nowrap z-50">
-            <Link href="/D1" className="hover:bg-secondary-400 p-2 rounded">
-              Deliverable 1
+            <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing" className="hover:bg-secondary-400 p-2 rounded">
+              Midterm Presentation
             </Link>
           </div>
         </div>
@@ -205,12 +205,12 @@ export default function Navbar() {
                 onClick={() => toggleMenu("final")}
                 className="flex justify-between items-center w-full"
               >
-                Final Deliverables
+                Presentations
                 {openMenu === "final" ? <ChevronUp /> : <ChevronDown />}
               </button>
               {openMenu === "final" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
-                  <Link href="/D1">Deliverable 1</Link>
+                  <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing">Midterm Presentation</Link>
                 </div>
               )}
             </div>
