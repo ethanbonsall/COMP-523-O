@@ -20,6 +20,15 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Oct 2nd, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Reviewed wireframe for admin interface</li>
+          <li>Decided to add edit button for each row, allowing for an activate/deactivate and edit individually and about mass selection case</li>
+          <li>Discussed table representation options</li>
+          <li>Reviewed Ethics assignment</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 26th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Showed client wireframe that has been adjusted according to their feedback.</li>
