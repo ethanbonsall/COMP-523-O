@@ -20,6 +20,28 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Oct 3rd, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>Reviewed the administrator wireframe with the client.</li>
+          <li>Discussed ingredient approval and activation workflow preferences.</li>
+          <li>Clarified administrator roles:
+            <ul>
+                <li>Superusers (≈5 total, including the client) can approve, activate, deactivate, and edit products.</li>
+                <li>Regular admins can only add or edit products.</li>
+            </ul>
+          </li>
+          <li>Ingredient approval process:
+            <ul>
+                <li>New ingredients must be approved by a superuser before being used in mixes.</li>
+                <li>When an ingredient is edited, it becomes deactivated/unapproved and must be reapproved by a superuser.</li>
+                <li>Once approved, it remains deactivated until a superuser activates it.</li>
+            </ul>
+          </li>
+          <li>Demonstrated the frontend of the nutrient needs calculator and early progress on the formula calculator.</li>
+          <li>Client will provide a list of key fields to display in the admin database view (out of 90+ available fields).</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 2nd, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
           <li>Reviewed wireframe for admin interface</li>
