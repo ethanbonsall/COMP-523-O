@@ -199,7 +199,7 @@ export default function Navbar() {
               </button>
               {openMenu === "assignments" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
-                  <Link href="/A1">Assignment 1</Link>
+                  <Link href="/ethics1">Ethics 1</Link>
                 </div>
               )}
             </div>
