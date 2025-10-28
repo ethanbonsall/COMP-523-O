@@ -20,6 +20,24 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Oct 24th, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>Presented demo of print summary PDF feature.</li>
+          <li>Update calculation for carbohydrates and fats.</li>
+          <li>Include calories per kg as well as total calorie needs.</li>
+          <li>Add spaces between amount and units.</li>
+          <li>Send field names from database.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Oct 21st, 2025 </p>
+          <p className="text-lg"> Coach Meeting </p>
+          <li>Scrolling and minor UI fixes for responsive design.</li>
+          <li>Suggested CoPilot to perform code review</li>
+          <li>Discussed regression testing - additional suite of tests in unit tests, CI/CD with Git Actions.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 10th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Presented demo of website&apos;s current functionality to client.</li>

@@ -17,7 +17,7 @@ const Apples = () => {
             APPLES Reflection
             </h1>
             
-          </section>
+        </section>
           <section className="bg-white shadow-lg rounded-2xl p-6 md:p-10 space-y-6">
                 <p><b>Prompt:</b> As part of the service-learning component of this course, you are to identify what the goals and values of your project are. Clearly, not all of the projects are out to solve world hunger but they are all meeting some population&apos;s needs. Identify the need that you are meeting. Explain the importance of this need and how the work that you are doing will impact it.</p>
                 <p><b>Response:</b> Pediatric dieticians play an essential role in supporting the healthy growth and development of children. However, a large portion of their time and energy is often spent performing manual calculations to determine nutritional needs, searching through multiple resources to find information on different formulas, and comparing the amount of each nutrient in a formula mix to the ideal amounts for a patient. This process is both time-consuming and mentally taxing, contributing to burnout among dieticians who could otherwise devote that energy to direct patient care. </p>
