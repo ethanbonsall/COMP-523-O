@@ -20,6 +20,28 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Oct 31st, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>Client will send data including probiotic and allergen fields.</li>
+          <li>Discussed % variable calculations.</li>
+          <li>Defined prebiotic = fiber.</li>
+          <li>Clarified liquid data inputs for total and water volume.</li>
+          <li>Reviewed formula calculator setup.</li>
+          <li>Discussed nutrient needs calculator details.</li>
+          <li>Noted landing page info to be provided by client</li>
+          <li>To check copyright for included materials.</li>
+        </div>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Oct 30th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Clarified formula lookup process.</li>
+          <li>Discussed % variable calculations.</li>
+          <li>Reviewed allergen data handling.</li>
+          <li>Talked about probiotics and prebiotics inclusion.</li>
+          <li>Agreed to finalize field names.</li>
+          <li>Delegated tech discussion to specific members</li>
+        </div>
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 24th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Presented demo of print summary PDF feature.</li>
