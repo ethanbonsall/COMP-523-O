@@ -31,6 +31,7 @@ const Journal = () => {
           <li>Noted landing page info to be provided by client</li>
           <li>To check copyright for included materials.</li>
         </div>
+        <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 30th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
@@ -41,6 +42,7 @@ const Journal = () => {
           <li>Agreed to finalize field names.</li>
           <li>Delegated tech discussion to specific members</li>
         </div>
+        <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 24th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
