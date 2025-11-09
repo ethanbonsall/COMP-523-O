@@ -20,6 +20,33 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> No 7th, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>Nutritional Needs Calculator: </li>
+          <li>Fix look-up function.</li>
+          <li>Make Daily Estimated Nutritional Needs table scrollable.</li>
+          <li>Round energy needs; update Fiber label to Fiber (DGA) under carbs.</li>
+          <li>Formula Recipe Input Table: </li>
+          <li>Show Add button, reduce font size.</li>
+          <li>Results Table: </li>
+          <li>Rename Ideal → DRI, show total calories/serving, total volume, water (mL), nutrient per recipe/serving.</li>
+          <li>Combine Holliday-Segar & DRI Fluid into single Water row.</li>
+          <li>Database Updates: </li>
+          <li>Rename fiber_sources → prebiotic_sources, add probiotic_sources, insert calculated fields, update energy calculations.</li>
+          <li>Powder DB: </li>
+          <li>Rename np100_water_ml → np100_water_ml_standard, add np100_standard_volume for % water.</li>
+          <li>Landing Page / Legal: </li>
+          <li>Add legal notices, terms of use, privacy policy, decide on copyright and EULA, note proprietary code info.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Nov 6th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Ask Coach about copyright issues.</li>
+          <li>Scheduled tech talk practice session: Sunday @ 3 PM.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 31st, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Client will send data including probiotic and allergen fields.</li>
