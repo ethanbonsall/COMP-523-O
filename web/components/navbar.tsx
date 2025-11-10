@@ -55,27 +55,34 @@ export default function Navbar() {
               className="hover:bg-secondary-400 p-2 rounded"
             >
               D2. Platform Specifications
+            </Link> 
+            <hr />
+            <Link
+              href="/test-plan"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              D3. Test Plan
             </Link>
             <hr />
             <Link
               href="/architecture-diagram"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-              D3. Architecture Diagram
+               Architecture Diagram
             </Link>
             <hr/>
             <Link
               href="/system-metaphor"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-              D4. System Metaphor
+              System Metaphor
             </Link>
             <hr/>
             <Link
               href="/prototype"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-              D5. Prototype
+              Prototype
              </Link>
           </div>
         </div>
@@ -166,9 +173,10 @@ export default function Navbar() {
                 <div className="ml-4 mt-2 flex flex-col gap-2">
                   <Link href="/specifications">D1. Specifications</Link>
                   <Link href="/platform-evaluation">D2. Platform Evaluation</Link>
-                  <Link href="/architecture-diagram">D3. Architecture Diagram</Link>
-                  <Link href="/system-metaphor">D4. System Metaphor</Link>
-                  <Link href="/prototype">D5. Prototype</Link>
+                  <Link href="/test-plan">D3. Test Plan</Link>
+                  <Link href="/architecture-diagram">Architecture Diagram</Link>
+                  <Link href="/system-metaphor">System Metaphor</Link>
+                  <Link href="/prototype">Prototype</Link>
 
                 </div>
               )}
