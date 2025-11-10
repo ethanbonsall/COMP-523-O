@@ -172,91 +172,103 @@ const TestPlan = () => {
 
           <section className="bg-white shadow-lg rounded-2xl p-6 md:p-10 space-y-6">
             <h2 className="text-2xl font-semibold">2. Actual Test Plan</h2>
-            <div className="space-y-4">
-              <p>
-                After evaluating alternatives, we chose the following stack to
-                meet client requirements and leverage team expertise:
-              </p>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  <strong>Programming Language:</strong> TypeScript/JavaScript
-                </li>
-                <li>
-                  <strong>Frontend:</strong> Next.js (React framework)
-                </li>
-                <li>
-                  <strong>Backend & Database:</strong> Supabase (Postgres, Auth)
-                </li>
-                <li>
-                  <strong>Deployment:</strong> Vercel
-                </li>
-                <li>
-                  <strong>Styling:</strong> Tailwind CSS
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="text-xl font-semibold">Justification</h3>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  Client required a <strong>web app</strong> that is low-cost
-                  but scalable.
-                </li>
-                <li>
-                  Team already had <strong>experience</strong> with Next.js,
-                  Tailwind, and Vercel.
-                </li>
-                <li>
-                  <strong>Vercel</strong> provides free SSL, automatic CI/CD,
-                  and smooth Next.js hosting.
-                </li>
-                <li>
-                  <strong>Supabase</strong> offers easy setup for database +
-                  authentication with upgrade paths.
-                </li>
-                <li>
-                  <strong>Next.js</strong> enables clean, fast code with SSR/SSG
-                  support.
-                </li>
-                <li>
-                  <strong>Tailwind CSS</strong> improves speed and consistency
-                  of UI development.
-                </li>
-                <li>
-                  All tools chosen have <strong>free tiers</strong> with upgrade
-                  paths.
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-3">
-              <h3 className="text-xl font-semibold">Alternatives Rejected</h3>
-              <ul className="list-disc list-inside space-y-1">
-                <li>
-                  <strong>Firebase:</strong> Strong realtime, but costly and
-                  NoSQL didn’t fit relational needs.
-                </li>
-                <li>
-                  <strong>Heroku:</strong> Free tier discontinued, costs higher.
-                </li>
-                <li>
-                  <strong>AWS/GCP/Azure:</strong> Overly complex for scope and
-                  budget.
-                </li>
-                <li>
-                  <strong>Angular/Vue.js:</strong> Both good frameworks, but
-                  React/Next.js fit better with Vercel and team expertise.
-                </li>
-                <li>
-                  <strong>Bootstrap/Material UI:</strong> Restrictive compared
-                  to Tailwind’s flexibility.
-                </li>
-                <li>
-                  <strong>Python/Java backends:</strong> Robust, but unnecessary
-                  complexity for our simple app.
-                </li>
-              </ul>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 className="font-semibold text-xl mb-2">Unit Testing</h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Ensure that core frontend functions and backend 
+                    connections work correctly</li>
+                  <li>Test login/logout, formula add/edit, and critical 
+                    calculation functions (nutritional needs and 
+                    formula mix totals, including edge cases).
+                  </li>
+                  <li>Regression tests run via GitHub Actions on every commit.</li>
+                  <li>Manual Testing for any complex calculation edge cases
+                    not fully covered by automated tests.</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-2">
+                  Integration and System Testing (with UI)
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Validate that the frontend, backend (Supabase), 
+                    and UI interact properly.</li>
+                  <li>Manual testing of critical workflows: login/logout, 
+                    adding/editing formulas, approving/deactivating formulas,
+                    and verifying database updates in Supabase.</li>
+                  <li>Limited Cypress E2E tests for 1–2 major flows.</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-2">
+                  Description of Tools Used
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>
+                    <strong>Jest 30.0</strong>: Unit tests for login and 
+                    formula functions.
+                  </li>
+                  <li>
+                    <strong>React Native Testing Library</strong>: Verify 
+                    core UI component behavior.
+                  </li>
+                  <li>
+                    <strong>Github Actions(CI/CD)</strong>: Automates running
+                    of unit tests on each commit.
+                  </li>
+                  <li>
+                    <strong>Cypress 15.6.0</strong>: Limited E2E tests for 
+                    1–2 major user flows.
+                  </li>
+                  <li>
+                    <strong>Artillery 2.0.26</strong>: Basic load test of 
+                    backend performance.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-2">
+                  Description of Types of End Users
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>
+                    <strong>Daisy Dietician</strong>: Uses nutrient needs 
+                    calculator and formula lookup.
+                  </li>
+                  <li>
+                    <strong>Alex Admin</strong>: Adds and edits formulas 
+                    in the database.
+                  </li>
+                  <li>
+                    <strong>Sally Superuser</strong>: Approves, activates, 
+                    and deactivates formulas.
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-2">
+                  Performance Testing
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Verify basic system stability under small user load.</li>
+                  <li>Conduct a simple Artillery load test with 5–10 
+                    concurrent users performing logins and formula lookups, 
+                    observing response time and system stability.</li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-xl mb-2">
+                  Acceptance Testing
+                </h3>
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Ensure the system meets client and user expectations.</li>
+                  <li>Manual testing by client and team members to confirm 
+                    feature correctness—including formula operations,
+                    nutrient calculations,and data display—and apply 
+                    minor bug fixes and UI adjustments based on feedback.</li>
+                </ul>
+              </div>
             </div>
           </section>
         </div>
