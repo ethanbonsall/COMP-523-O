@@ -132,6 +132,7 @@ export default function Navbar() {
             <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing" className="hover:bg-secondary-400 p-2 rounded">
               Midterm Presentation
             </Link>
+            <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing" className="hover:bg-secondary-400 p-2 rounded">Tech Talk</Link>
           </div>
         </div>
 
@@ -232,7 +233,9 @@ export default function Navbar() {
               {openMenu === "final" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
                   <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing">Midterm Presentation</Link>
+                  <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing">Tech Talk</Link>
                 </div>
+                
               )}
             </div>
 
