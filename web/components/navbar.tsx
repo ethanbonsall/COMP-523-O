@@ -64,6 +64,8 @@ export default function Navbar() {
               D3. Test Plan
             </Link>
             <hr />
+            <Link href="/user-manual" className="hover:bg-secondary-400 p-2 rounded">D4. User Manual</Link>
+            <hr />
             <Link
               href="/architecture-diagram"
               className="hover:bg-secondary-400 p-2 rounded"
@@ -175,6 +177,7 @@ export default function Navbar() {
                   <Link href="/specifications">D1. Specifications</Link>
                   <Link href="/platform-evaluation">D2. Platform Evaluation</Link>
                   <Link href="/test-plan">D3. Test Plan</Link>
+                  <Link href="/user-manual">D4. User Manual</Link>
                   <Link href="/architecture-diagram">Architecture Diagram</Link>
                   <Link href="/system-metaphor">System Metaphor</Link>
                   <Link href="/prototype">Prototype</Link>
