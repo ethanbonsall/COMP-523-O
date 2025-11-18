@@ -20,6 +20,17 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Nov 14th, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>Reviewed required fields.</li>
+          <li>Decided on placement of user documentation (separate page or PDF link).</li>
+          <li>Discussed downloading user data via Supabase.</li>
+          <li>Asked if the client wants any additional specific items included.</li>
+          <li>Formula calculator updates: use 1 oz = 30 ml, replace “water” with “free water,” and keep only ounces/ml while removing cups/teaspoons/tablespoons.</li>
+          <li>Admin panel will allow exporting user data as a CSV.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> No 7th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Nutritional Needs Calculator: </li>
