@@ -29,7 +29,9 @@ export default function Navbar() {
             root.classList.add("light");
             root.classList.remove("dark");
           }
-        } } href="/"     >
+        }}
+        href="/"
+      >
         <h1>COMP 523</h1>
         <h1>Team O</h1>
       </Link>
@@ -55,7 +57,7 @@ export default function Navbar() {
               className="hover:bg-secondary-400 p-2 rounded"
             >
               D2. Platform Specifications
-            </Link> 
+            </Link>
             <hr />
             <Link
               href="/test-plan"
@@ -64,28 +66,40 @@ export default function Navbar() {
               D3. Test Plan
             </Link>
             <hr />
-            <Link href="/user-manual" className="hover:bg-secondary-400 p-2 rounded">D4. User Manual</Link>
+            <Link
+              href="/user-manual"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              D4. User Manual
+            </Link>
             <hr />
             <Link
               href="/architecture-diagram"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-               Architecture Diagram
+              Architecture Diagram
             </Link>
-            <hr/>
+            <hr />
             <Link
               href="/system-metaphor"
               className="hover:bg-secondary-400 p-2 rounded"
             >
               System Metaphor
             </Link>
-            <hr/>
+            <hr />
             <Link
               href="/prototype"
               className="hover:bg-secondary-400 p-2 rounded"
             >
               Prototype
-             </Link>
+            </Link>
+            <hr />
+            <Link
+              href="/client-handoff"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              Client Handoff Document
+            </Link>
           </div>
         </div>
 
@@ -112,7 +126,10 @@ export default function Navbar() {
             <ChevronDown className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:rotate-180" />
           </button>
           <div className="absolute top-full left-0 hidden group-hover:flex flex-col bg-secondary text-text font-bold rounded-lg shadow-lg p-1 min-w-full whitespace-nowrap z-50">
-            <Link href="/ethics1" className="hover:bg-secondary-400 p-2 rounded">
+            <Link
+              href="/ethics1"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
               Ethics 1
             </Link>
             <Link href="/apples" className="hover:bg-secondary-400 p-2 rounded">
@@ -131,14 +148,25 @@ export default function Navbar() {
             <ChevronDown className="h-5 w-5 ml-1 transition-transform duration-200 group-hover:rotate-180" />
           </button>
           <div className="absolute top-full left-0 hidden group-hover:flex flex-col bg-secondary text-text font-bold rounded-lg shadow-lg p-1 min-w-full whitespace-nowrap z-50">
-            <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing" className="hover:bg-secondary-400 p-2 rounded">
+            <Link
+              href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
               Midterm Presentation
             </Link>
-            <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing" className="hover:bg-secondary-400 p-2 rounded">Tech Talk</Link>
+            <Link
+              href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              Tech Talk
+            </Link>
           </div>
         </div>
 
-        <Link href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu" className="hover:text-text-200 font-bold">
+        <Link
+          href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu"
+          className="hover:text-text-200 font-bold"
+        >
           CONTACT US
         </Link>
       </div>
@@ -175,13 +203,15 @@ export default function Navbar() {
               {openMenu === "deliverables" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
                   <Link href="/specifications">D1. Specifications</Link>
-                  <Link href="/platform-evaluation">D2. Platform Evaluation</Link>
+                  <Link href="/platform-evaluation">
+                    D2. Platform Evaluation
+                  </Link>
                   <Link href="/test-plan">D3. Test Plan</Link>
                   <Link href="/user-manual">D4. User Manual</Link>
                   <Link href="/architecture-diagram">Architecture Diagram</Link>
                   <Link href="/system-metaphor">System Metaphor</Link>
                   <Link href="/prototype">Prototype</Link>
-
+                  <Link href="/client-handoff">Client Handoff Document</Link>
                 </div>
               )}
             </div>
@@ -235,14 +265,20 @@ export default function Navbar() {
               </button>
               {openMenu === "final" && (
                 <div className="ml-4 mt-2 flex flex-col gap-2">
-                  <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing">Midterm Presentation</Link>
-                  <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing">Tech Talk</Link>
+                  <Link href="https://docs.google.com/presentation/d/1clHK2hGA29A6UfNAkxsbG75oKuxZ8PRXwz0aZ8nYDHQ/view?usp=sharing">
+                    Midterm Presentation
+                  </Link>
+                  <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing">
+                    Tech Talk
+                  </Link>
                 </div>
-                
               )}
             </div>
 
-            <Link className="font-bold" href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu">
+            <Link
+              className="font-bold"
+              href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu"
+            >
               CONTACT US
             </Link>
           </div>
