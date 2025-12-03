@@ -160,6 +160,18 @@ export default function Navbar() {
             >
               Tech Talk
             </Link>
+            <Link
+              href="https://docs.google.com/presentation/d/1FlN8R21l5i4_ouTbyXlMWTXoL5x7FgPV0sKwNZbEI3s/edit?usp=sharing"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              Final Presentation Slides
+            </Link>
+            <Link
+              href="https://www.youtube.com/watch?v=64xGCSHDCKg"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              Final Presentation Video
+            </Link>
           </div>
         </div>
 
@@ -271,6 +283,18 @@ export default function Navbar() {
                   <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing">
                     Tech Talk
                   </Link>
+                  <Link
+              href="https://docs.google.com/presentation/d/1FlN8R21l5i4_ouTbyXlMWTXoL5x7FgPV0sKwNZbEI3s/edit?usp=sharing"
+              
+            >
+              Final Presentation Slides
+            </Link>
+            <Link
+              href="https://www.youtube.com/watch?v=64xGCSHDCKg"
+             
+            >
+              Final Presentation Video
+            </Link>
                 </div>
               )}
             </div>
