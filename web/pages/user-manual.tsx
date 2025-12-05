@@ -113,25 +113,39 @@ const TestPlan = () => {
                 </h3>
                 <ul className="list-disc list-inside space-y-1">
                   <li>
-                    <strong>User Manuals and FAQS: </strong> Will be provided as
-                    dedicated pages within the web app and available as
-                    downloadable PDFs. This approach allows users—especially
-                    clinicians who may have limited time—to access instructions
-                    directly while using the tool. PDFs provide an offline
-                    option and ensure portability. Because user familiarity with
-                    technology may vary widely, manuals will use clear,
-                    non-technical language and include screenshots, diagrams,
-                    and step-by-step examples.
+                    <strong>User Manuals: </strong> Will be provided as
+                    dedicated pages within the web app through this{" "}
+                    <a
+                      className="text-blue-500"
+                      href="https://www.pediatricbluebook.com/user-guide"
+                    >
+                      link{" "}
+                    </a>{" "}
+                    and available as downloadable PDFs. This approach allows
+                    users—especially clinicians who may have limited time—to
+                    access instructions directly while using the tool. PDFs
+                    provide an offline option and ensure portability. Because
+                    user familiarity with technology may vary widely, manuals
+                    will use clear, non-technical language and include
+                    screenshots, diagrams, and step-by-step examples. FAQs will
+                    be provided by the client.
                   </li>
                   <li>
                     <strong>ReadMe File (System Setup & Maintenance) : </strong>
                     All developer-level and administrator-level technical
                     information (setup, configuration, deployment, environment
                     variables, database structure) will be documented in the
-                    project’s GitHub README. The README is the conventional and
-                    most accessible location for system setup instructions for
-                    future developers or client technical staff. It ensures
-                    long-term maintainability and version control.
+                    project’s GitHub{" "}
+                    <a
+                      className="text-blue-500"
+                      href="https://github.com/ethanbonsall/Pediatric-Blue-Book/blob/main/README.md"
+                    >
+                      README
+                    </a>
+                    . The README is the conventional and most accessible
+                    location for system setup instructions for future developers
+                    or client technical staff. It ensures long-term
+                    maintainability and version control.
                   </li>
                   <li>
                     <strong>Tutorial Videos: </strong> Will be provided as short
@@ -143,7 +157,13 @@ const TestPlan = () => {
                     client via email and linked on our team website. Videos
                     support visual learners, reduce onboarding time, and help
                     users with limited technical experience follow workflows
-                    more confidently. These videos will be linked in the Client Handoff Document. 
+                    more confidently. These videos will be linked in the{" "}
+                    <a
+                      className="text-blue-500"
+                      href="https://comp-523-o.vercel.app/client-handoff"
+                    >
+                      Client Handoff Document.{" "}
+                    </a>
                   </li>
                 </ul>
               </div>

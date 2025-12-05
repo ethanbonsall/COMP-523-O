@@ -93,7 +93,9 @@ const ClientHandoff = () => {
                   </li>
                   <li>
                     The live website is hosted on Vercel. The client will
-                    receive full administrative access to the Vercel project.
+                    receive full administrative access to the Vercel project. A
+                    team member will walk the client through passing over Vercel
+                    access over a Zoom call.
                   </li>
                 </ul>
               </div>

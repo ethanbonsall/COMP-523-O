@@ -20,34 +20,106 @@ const Journal = () => {
         </p>
         <br></br>
         <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Dec 2nd, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>Recorded final presentation.</li>
+          <li>Reviewed final deliverables.</li>
+        </div>
+        <br></br>
+        <div className="container mx-auto px-[15%]">
+          <p className="text-lg"> Client Meeting </p>
+          <li>
+            Ensure smooth hand off to client: ensure client access to Supabase,
+            answer any outstanding questions.{" "}
+          </li>
+          <li>Client hasn&apos;t found any more bugs.</li>
+        </div>
+        <br></br>
+
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Nov 21st, 2025 </p>
+          <p className="text-lg"> Client Meeting </p>
+          <li>
+            Working on putting together hand off documentation, will include
+            videos kcals/ml in the water circle component
+          </li>
+          <li>
+            Have made progress on testing, fixes to formula calculations,
+            contact/disclaimer bar, working on formula printing and user manual
+            still
+          </li>
+          <li>Fiber is pulling from age 8 instead of 7</li>
+          <li>Vitamin K should be micrograms</li>
+          <li>
+            Calcium down - Rounding should be done to 1 decimal point. Also
+            round in the popup in lookup ingredients
+          </li>
+          <li>Admin panel will allow exporting user data as a CSV.</li>
+        </div>
+        <br></br>
+
+        <div className="container mx-auto px-[15%]">
+          <p className="text-xl"> Nov 20th, 2025 </p>
+          <p className="text-lg"> Team Meeting </p>
+          <li>
+            Questions for client: preference for 1 oz = 30 ml or precise
+            conversion?
+          </li>
+        </div>
+        <br></br>
+
+        <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Nov 14th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Reviewed required fields.</li>
-          <li>Decided on placement of user documentation (separate page or PDF link).</li>
+          <li>
+            Decided on placement of user documentation (separate page or PDF
+            link).
+          </li>
           <li>Discussed downloading user data via Supabase.</li>
-          <li>Asked if the client wants any additional specific items included.</li>
-          <li>Formula calculator updates: use 1 oz = 30 ml, replace “water” with “free water,” and keep only ounces/ml while removing cups/teaspoons/tablespoons.</li>
+          <li>
+            Asked if the client wants any additional specific items included.
+          </li>
+          <li>
+            Formula calculator updates: use 1 oz = 30 ml, replace “water” with
+            “free water,” and keep only ounces/ml while removing
+            cups/teaspoons/tablespoons.
+          </li>
           <li>Admin panel will allow exporting user data as a CSV.</li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
-          <p className="text-xl"> No 7th, 2025 </p>
+          <p className="text-xl"> Nov 7th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Nutritional Needs Calculator: </li>
           <li>Fix look-up function.</li>
           <li>Make Daily Estimated Nutritional Needs table scrollable.</li>
-          <li>Round energy needs; update Fiber label to Fiber (DGA) under carbs.</li>
+          <li>
+            Round energy needs; update Fiber label to Fiber (DGA) under carbs.
+          </li>
           <li>Formula Recipe Input Table: </li>
           <li>Show Add button, reduce font size.</li>
           <li>Results Table: </li>
-          <li>Rename Ideal → DRI, show total calories/serving, total volume, water (mL), nutrient per recipe/serving.</li>
+          <li>
+            Rename Ideal → DRI, show total calories/serving, total volume, water
+            (mL), nutrient per recipe/serving.
+          </li>
           <li>Combine Holliday-Segar & DRI Fluid into single Water row.</li>
           <li>Database Updates: </li>
-          <li>Rename fiber_sources → prebiotic_sources, add probiotic_sources, insert calculated fields, update energy calculations.</li>
+          <li>
+            Rename fiber_sources → prebiotic_sources, add probiotic_sources,
+            insert calculated fields, update energy calculations.
+          </li>
           <li>Powder DB: </li>
-          <li>Rename np100_water_ml → np100_water_ml_standard, add np100_standard_volume for % water.</li>
+          <li>
+            Rename np100_water_ml → np100_water_ml_standard, add
+            np100_standard_volume for % water.
+          </li>
           <li>Landing Page / Legal: </li>
-          <li>Add legal notices, terms of use, privacy policy, decide on copyright and EULA, note proprietary code info.</li>
+          <li>
+            Add legal notices, terms of use, privacy policy, decide on copyright
+            and EULA, note proprietary code info.
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
@@ -60,7 +132,9 @@ const Journal = () => {
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 31st, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
-          <li>Client will send data including probiotic and allergen fields.</li>
+          <li>
+            Client will send data including probiotic and allergen fields.
+          </li>
           <li>Discussed % variable calculations.</li>
           <li>Defined prebiotic = fiber.</li>
           <li>Clarified liquid data inputs for total and water volume.</li>
@@ -96,14 +170,24 @@ const Journal = () => {
           <p className="text-lg"> Coach Meeting </p>
           <li>Scrolling and minor UI fixes for responsive design.</li>
           <li>Suggested CoPilot to perform code review</li>
-          <li>Discussed regression testing - additional suite of tests in unit tests, CI/CD with Git Actions.</li>
+          <li>
+            Discussed regression testing - additional suite of tests in unit
+            tests, CI/CD with Git Actions.
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 10th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
-          <li>Presented demo of website&apos;s current functionality to client.</li>
-          <li>Recieved feedback from client: remove length field, verify calculation of &quot;high protein&quot;, reorder nutrient display in nutrient needs calculator, show weights in both kg and lbs, investigate login issues, and add explanation text on Login Page.</li>
+          <li>
+            Presented demo of website&apos;s current functionality to client.
+          </li>
+          <li>
+            Recieved feedback from client: remove length field, verify
+            calculation of &quot;high protein&quot;, reorder nutrient display in
+            nutrient needs calculator, show weights in both kg and lbs,
+            investigate login issues, and add explanation text on Login Page.
+          </li>
           <li>Data entry page doesn&apos;t need mobile optimization.</li>
           <li>Client will provide formula data for testing.</li>
         </div>
@@ -112,20 +196,45 @@ const Journal = () => {
           <p className="text-xl"> Oct 3rd, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
           <li>Reviewed the administrator wireframe with the client.</li>
-          <li>Discussed ingredient approval and activation workflow preferences.</li>
-          <li>Clarified administrator roles i.e., superusers (≈5 total, including the client) can approve, activate, deactivate, and edit products. Regular admins can only add or edit products.</li>
-          <li>New ingredients must be approved by a superuser before being used in mixes.</li>
-          <li>When an ingredient is edited, it becomes deactivated/unapproved and must be reapproved by a superuser.</li>
-          <li>Once approved, it remains deactivated until a superuser activates it.</li>
-          <li>Demonstrated the frontend of the nutrient needs calculator and early progress on the formula calculator.</li>
-          <li>Client will provide a list of key fields to display in the admin database view (out of 90+ available fields).</li>
+          <li>
+            Discussed ingredient approval and activation workflow preferences.
+          </li>
+          <li>
+            Clarified administrator roles i.e., superusers (≈5 total, including
+            the client) can approve, activate, deactivate, and edit products.
+            Regular admins can only add or edit products.
+          </li>
+          <li>
+            New ingredients must be approved by a superuser before being used in
+            mixes.
+          </li>
+          <li>
+            When an ingredient is edited, it becomes deactivated/unapproved and
+            must be reapproved by a superuser.
+          </li>
+          <li>
+            Once approved, it remains deactivated until a superuser activates
+            it.
+          </li>
+          <li>
+            Demonstrated the frontend of the nutrient needs calculator and early
+            progress on the formula calculator.
+          </li>
+          <li>
+            Client will provide a list of key fields to display in the admin
+            database view (out of 90+ available fields).
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Oct 2nd, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
           <li>Reviewed wireframe for admin interface</li>
-          <li>Decided to add edit button for each row, allowing for an activate/deactivate and edit individually and about mass selection case</li>
+          <li>
+            Decided to add edit button for each row, allowing for an
+            activate/deactivate and edit individually and about mass selection
+            case
+          </li>
           <li>Discussed table representation options</li>
           <li>Reviewed Ethics assignment</li>
         </div>
@@ -133,35 +242,69 @@ const Journal = () => {
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 26th, 2025 </p>
           <p className="text-lg"> Client Meeting </p>
-          <li>Showed client wireframe that has been adjusted according to their feedback.</li>
-          <li>For the formula calculator page, user should be able to see additional information such as what type of source the formula is.</li>
+          <li>
+            Showed client wireframe that has been adjusted according to their
+            feedback.
+          </li>
+          <li>
+            For the formula calculator page, user should be able to see
+            additional information such as what type of source the formula is.
+          </li>
           <li>Need to create wireframe for admin side.</li>
-          <li>Admin users should be able to put in data into the formula lookup table. Stretch goal: web scraping for data.</li>
-          <li>Showed client demo of log-in and sign up page and discusses mobile accessibility.</li>
+          <li>
+            Admin users should be able to put in data into the formula lookup
+            table. Stretch goal: web scraping for data.
+          </li>
+          <li>
+            Showed client demo of log-in and sign up page and discusses mobile
+            accessibility.
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 25th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>Went over client&apos;s feedback on wireframe and finalized specification document.</li>
-          <li>Created project board on Jira and delegated tasks for midterm presentation.</li>
+          <li>
+            Went over client&apos;s feedback on wireframe and finalized
+            specification document.
+          </li>
+          <li>
+            Created project board on Jira and delegated tasks for midterm
+            presentation.
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 18th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>Reviewed user stories, functional, requirements, and non-functional requirements for specification document.</li>
+          <li>
+            Reviewed user stories, functional, requirements, and non-functional
+            requirements for specification document.
+          </li>
           <li>Delegated work for wireframe.</li>
-          <li>Questions for client: notifications, mobile accessibility, number of concurrent users.</li>
+          <li>
+            Questions for client: notifications, mobile accessibility, number of
+            concurrent users.
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
           <p className="text-xl"> Sept 12th, 2025 </p>
           <p className="text-lg"> Team Meeting </p>
-          <li>Client prefers an autocomplete search function - stretch goal of supporting multiple options for search</li>
-          <li>Formula Page: Allow recipe manipulation, flexible batch sizes, and user-defined total volume. Support household measures as well as scoops and include liquid formula in milliliters.</li>
+          <li>
+            Client prefers an autocomplete search function - stretch goal of
+            supporting multiple options for search
+          </li>
+          <li>
+            Formula Page: Allow recipe manipulation, flexible batch sizes, and
+            user-defined total volume. Support household measures as well as
+            scoops and include liquid formula in milliliters.
+          </li>
           <li>Advanced Feature: Enable mixing multiple formulas.</li>
-          <li>Data requirements: client will provide nutrient cutoff tables and formula lookup details. </li>
+          <li>
+            Data requirements: client will provide nutrient cutoff tables and
+            formula lookup details.{" "}
+          </li>
         </div>
         <br></br>
         <div className="container mx-auto px-[15%]">
@@ -185,8 +328,8 @@ const Journal = () => {
             formulas.
           </li>
           <li>
-            Users include dieticians, supervisors, and med students - will always
-            be healthcare administrators.
+            Users include dieticians, supervisors, and med students - will
+            always be healthcare administrators.
           </li>
           <li>
             Requires a centralized, up-to-date database of formulas and
@@ -207,7 +350,6 @@ const Journal = () => {
           <li>Draft questions for client meeting</li>
           <li>Action items before next meeting - update website</li>
         </div>
-        
       </div>
       <BottomBar />
     </>
