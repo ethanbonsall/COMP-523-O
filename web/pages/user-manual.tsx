@@ -143,7 +143,7 @@ const TestPlan = () => {
                     client via email and linked on our team website. Videos
                     support visual learners, reduce onboarding time, and help
                     users with limited technical experience follow workflows
-                    more confidently.
+                    more confidently. These videos will be linked in the Client Handoff Document. 
                   </li>
                 </ul>
               </div>
