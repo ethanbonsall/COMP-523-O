@@ -290,24 +290,18 @@ export default function Navbar() {
                   <Link href="https://docs.google.com/presentation/d/1vuwleFhmda7OmW4WInsvHz6vZ8vWQnJHeLVFb4fP4DU/edit?usp=sharing">
                     Tech Talk
                   </Link>
-                  <Link
-              href="https://docs.google.com/presentation/d/1FlN8R21l5i4_ouTbyXlMWTXoL5x7FgPV0sKwNZbEI3s/edit?usp=sharing"
-              
-            >
-              Final Presentation Slides
-            </Link>
-            <Link
-              href="https://www.youtube.com/watch?v=64xGCSHDCKg"
-             
-            >
-              Final Presentation Video
-            </Link>
+                  <Link href="https://docs.google.com/presentation/d/1FlN8R21l5i4_ouTbyXlMWTXoL5x7FgPV0sKwNZbEI3s/edit?usp=sharing">
+                    Final Presentation Slides
+                  </Link>
+                  <Link href="https://www.youtube.com/watch?v=64xGCSHDCKg">
+                    Final Presentation Video
+                  </Link>
                 </div>
               )}
             </div>
 
             <Link
-              className="font-bold"
+              className="font-semibold"
               href="mailto:lcbean@ad.unc.edu;ebonsall@unc.edu;archgoli@ad.unc.edu;apandey@ad.unc.edu"
             >
               CONTACT US
