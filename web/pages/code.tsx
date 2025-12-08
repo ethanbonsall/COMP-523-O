@@ -9,7 +9,7 @@ const Home = () => {
         <title>Code</title>
       </Head>
       <Navbar />
-      <main className="flex min-h-screen items-center justify-center bg-background text-center">
+      <main className="flex flex-col min-h-screen items-center justify-center bg-background text-center">
         <a
           href="/Pediatric-Blue-Book-main.zip"
           download="Pediatric-Blue-Book-main.zip"
