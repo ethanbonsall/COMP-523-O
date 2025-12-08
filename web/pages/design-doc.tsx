@@ -12,11 +12,15 @@ const DesignDocument = () => {
         <div className="max-w-5xl mx-auto space-y-10">
           <section className="text-center">
             <h1 className="text-4xl font-bold mb-4">Design Document</h1>
+            <p className="text-lg text-gray-600">
+              Explains the core ideas behind the code so a new developer 
+              can work with it confidently.
+            </p>
           </section>
 
           <section className="bg-white shadow-lg rounded-2xl p-6 md:p-10 space-y-6">
             <div>
-              <h2 className="text-2xl font-semibold">1: Architecture</h2>
+              <h2 className="text-2xl font-semibold">1: Architecture Diagram</h2>
               <div className="container mx-auto px-[5%]">
                 <img
                   src="/images/Arch-Diagram-updated.png"
