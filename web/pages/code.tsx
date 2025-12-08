@@ -19,7 +19,7 @@ const Home = () => {
         </a>
         <Link
           href="https://github.com/ethanbonsall/Pediatric-Blue-Book"
-          className="text-4xl font-bold text-text hover:text-text-700 transition-colors"
+          className="text-4xl font-bold text-text hover:text-text-700 transition-colors mt-2"
         >
           GitHub
         </Link>
