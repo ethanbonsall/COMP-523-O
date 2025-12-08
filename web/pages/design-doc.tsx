@@ -204,72 +204,256 @@ const DesignDocument = () => {
                         <p>Purpose: recipe ingredients</p>
                         <p>The ingredient list for the formulas.</p>
                         <table>
-  <tr><th>Name</th><th>Data Type</th><th>Description</th></tr>
-
-  <tr><td>product</td><td>text</td><td>Product name</td></tr>
-  <tr><td>company_brand</td><td>text</td><td>Company or brand name</td></tr>
-  <tr><td>age</td><td>text</td><td>Age group</td></tr>
-  <tr><td>notes</td><td>text</td><td>any notes</td></tr>
-  <tr><td>id</td><td>uuid</td><td>id of the product</td></tr>
-  <tr><td>active</td><td>boolean</td><td>if active or not</td></tr>
-  <tr><td>approved</td><td>boolean</td><td>if approved or not</td></tr>
-  <tr><td>protein_sources</td><td>text</td><td>Sources of protein</td></tr>
-  <tr><td>carbohydrate_sources</td><td>text</td><td>Sources of carbohydrates</td></tr>
-   <tr><td>fat_sources</td><td>text</td><td>Sources of fat</td></tr>
-  <tr><td>prebiotic_sources</td><td>text</td><td>Sources of prebiotics</td></tr>
-    <tr><td>probiotic_sources</td><td>text</td><td>probiotic sources</td></tr>
-  <tr><td>specialty_ingredients</td><td>text</td><td>Specialty ingredients</td></tr>
-  <tr><td>grams_per_scoop</td><td>double precision</td><td>per scoop amount</td></tr>
-  <tr><td>grams_per_teaspoon</td><td>double precision</td><td>per teaspoon amount</td></tr>
-  <tr><td>grams_per_tablespoon</td><td>double precision</td><td>per tablespoon amount</td></tr>
-  <tr><td>grams_per_cup</td><td>double precision</td><td>per cup amount</td></tr>
-  <tr><td>calories_per_gram</td><td>double precision</td><td>calories per gram</td></tr>
-  <tr><td>np100_total_protein_g</td><td>double precision</td><td>total protein amount</td></tr>
-  <tr><td>np100_total_fat_g</td><td>double precision</td><td>total fat amount</td></tr>
-  <tr><td>np100_total_carbohydrate_g</td><td>double precision</td><td>total carbohydrate amount</td></tr>
-  <tr><td>np100_water_ml_standard</td><td>double precision</td><td>standard water amount in ml</td></tr>
-  <tr><td>np100_vitamin_a_mcg_re</td><td>double precision</td><td>total vit a amount</td></tr>
-  <tr><td>np100_vitamin_d_mcg</td><td>double precision</td><td>total vit d amount</td></tr>
-  <tr><td>np100_vitamin_e_mg</td><td>double precision</td><td>total vit e amount</td></tr>
-  <tr><td>np100_vitamin_k_mcg</td><td>double precision</td><td>total vit k amount</td></tr>
-  <tr><td>np100_thiamin_mg</td><td>double precision</td><td>total thiamin amount</td></tr>
-  <tr><td>np100_riboflavin_mg</td><td>double precision</td><td>total riboflavin amount</td></tr>
-  <tr><td>np100_niacin_mg</td><td>double precision</td><td>total niacin amount</td></tr>
-  <tr><td>np100_b6_mg</td><td>double precision</td><td>total b6 amount</td></tr>
-  <tr><td>np100_b12_mcg</td><td>double precision</td><td>total b12 amount</td></tr>
-  <tr><td>np100_vitamin_c_mg</td><td>double precision</td><td>total vitamin c amount</td></tr>
-  <tr><td>np100_folic_acid_mcg</td><td>double precision</td><td>total folic acid amount</td></tr>
-  <tr><td>np100_biotin_mcg</td><td>double precision</td><td>total biotin amount</td></tr>
-  <tr><td>np100_pantothenic_acid_mg</td><td>double precision</td><td>total pantothenic acid amount</td></tr>
-  <tr><td>np100_choline_mg</td><td>double precision</td><td>total choline amount</td></tr>
-  <tr><td>np100_inositol_mg</td><td>double precision</td><td>total inositol amount</td></tr>
-  <tr><td>np100_sodium_mg</td><td>double precision</td><td>total sodium amount</td></tr>
-  <tr><td>np100_potassium_mg</td><td>double precision</td><td>total potassium amount</td></tr>
-  <tr><td>np100_chloride_mg</td><td>double precision</td><td>total chloride amount</td></tr>
-  <tr><td>np100_calcium_mg</td><td>double precision</td><td>total calcium amount</td></tr>
-  <tr><td>np100_phosphorus_mg</td><td>double precision</td><td>total phosphorus amount</td></tr>
-  <tr><td>np100_iron_mg</td><td>double precision</td><td>total iron amount</td></tr>
-  <tr><td>np100_zinc_mg</td><td>double precision</td><td>total zinc amount</td></tr>
-  <tr><td>np100_magnesium_mg</td><td>double precision</td><td>total magnesium amount</td></tr>
-  <tr><td>np100_iodine_mcg</td><td>double precision</td><td>total iodine amount</td></tr>
-  <tr><td>np100_manganese_mg</td><td>double precision</td><td>total manganese amount</td></tr>
-  <tr><td>np100_selenium_mcg</td><td>double precision</td><td>total selenium amount</td></tr>
-  <tr><td>np100_chromium_mcg</td><td>double precision</td><td>total chromium amount</td></tr>
-  <tr><td>np100_molybdenum_mcg</td><td>double precision</td><td>total molybdenum amount</td></tr>
-  <tr><td>np100_copper_mg</td><td>double precision</td><td>total copper amount</td></tr>
-  <tr><td>probiotic</td><td>text</td><td>total probiotic amount</td></tr>
-  <tr><td>allergens</td><td>text</td><td>any allergens</td></tr>
-  <tr><td>displacement_ml_per_g</td><td>double precision</td><td>displacement amount</td></tr>
-  <tr><td>np100_standard_volume</td><td>double precision</td><td>volume of the fomula</td></tr>
-  <tr><td>npc_percent_free_water</td><td>numeric</td><td>percentage of water</td></tr>
-  <tr><td>npc_percent_cal_from_cho</td><td>numeric</td><td>percentage of calories from carbohydrates</td></tr>
-  <tr><td>npc_percent_cal_from_fat</td><td>numeric</td><td>percentage of calories from fat</td></tr>
-  <tr><td>npc_percent_cal_from_protein</td><td>numeric</td><td>percentage of calories from protein</td></tr>
-  <tr><td>np100_fluoride_mg</td><td>double precision</td><td>total fluoride amount</td></tr>
-  <tr><td>np100_fiber_g</td><td>double precision</td><td>total fiber amount</td></tr>
-</table>
-
-
+                            <tr>
+                                <th>Name</th>
+                                <th>Data Type</th>
+                                <th>Description</th>
+                            </tr>
+                            <tr>
+                                <td>product</td>
+                                <td>text</td>
+                                <td>Product name</td></tr>
+                            <tr>
+                                <td>company_brand</td>
+                                <td>text</td>
+                                <td>Company or brand name</td></tr>
+                            <tr>
+                                <td>age</td>
+                                <td>text</td>
+                                <td>Age group</td></tr>
+                            <tr>
+                                <td>notes</td>
+                                <td>text</td>
+                                <td>any notes</td></tr>
+                            <tr>
+                                <td>id</td>
+                                <td>uuid</td>
+                                <td>id of the product</td></tr>
+                            <tr>
+                                <td>active</td>
+                                <td>boolean</td>
+                                <td>if active or not</td></tr>
+                            <tr>
+                                <td>approved</td>
+                                <td>boolean</td>
+                                <td>if approved or not</td></tr>
+                            <tr>
+                                <td>protein_sources</td>
+                                <td>text</td>
+                                <td>Sources of protein</td></tr>
+                            <tr>
+                                <td>carbohydrate_sources</td>
+                                <td>text</td>
+                                <td>Sources of carbohydrates</td></tr>
+                            <tr>
+                                <td>fat_sources</td>
+                                <td>text</td>
+                                <td>Sources of fat</td></tr>
+                            <tr>
+                                <td>prebiotic_sources</td>
+                                <td>text</td>
+                                <td>Sources of prebiotics</td></tr>
+                            <tr>
+                                <td>probiotic_sources</td>
+                                <td>text</td>
+                                <td>probiotic sources</td></tr>
+                            <tr>
+                                <td>specialty_ingredients</td>
+                                <td>text</td>
+                                <td>Specialty ingredients</td></tr>
+                            <tr>
+                                <td>grams_per_scoop</td>
+                                <td>double precision</td>
+                                <td>per scoop amount</td></tr>
+                            <tr>
+                                <td>grams_per_teaspoon</td>
+                                <td>double precision</td>
+                                <td>per teaspoon amount</td></tr>
+                            <tr>
+                                <td>grams_per_tablespoon</td>
+                                <td>double precision</td>
+                                <td>per tablespoon amount</td></tr>
+                            <tr>
+                                <td>grams_per_cup</td>
+                                <td>double precision</td>
+                                <td>per cup amount</td></tr>
+                            <tr>
+                                <td>calories_per_gram</td>
+                                <td>double precision</td>
+                                <td>calories per gram</td></tr>
+                            <tr>
+                                <td>np100_total_protein_g</td>
+                                <td>double precision</td>
+                                <td>total protein amount</td></tr>
+                            <tr>
+                                <td>np100_total_fat_g</td>
+                                <td>double precision</td>
+                                <td>total fat amount</td></tr>
+                            <tr>
+                                <td>np100_total_carbohydrate_g</td>
+                                <td>double precision</td>
+                                <td>total carbohydrate amount</td></tr>
+                            <tr>
+                                <td>np100_water_ml_standard</td>
+                                <td>double precision</td>
+                                <td>standard water amount in ml</td></tr>
+                            <tr>
+                                <td>np100_vitamin_a_mcg_re</td>
+                                <td>double precision</td>
+                                <td>total vit a amount</td></tr>
+                            <tr>
+                                <td>np100_vitamin_d_mcg</td>
+                                <td>double precision</td>
+                                <td>total vit d amount</td></tr>
+                            <tr>
+                                <td>np100_vitamin_e_mg</td>
+                                <td>double precision</td>
+                                <td>total vit e amount</td></tr>
+                            <tr>
+                                <td>np100_vitamin_k_mcg</td>
+                                <td>double precision</td>
+                                <td>total vit k amount</td></tr>
+                            <tr>
+                                <td>np100_thiamin_mg</td>
+                                <td>double precision</td>
+                                <td>total thiamin amount</td></tr>
+                            <tr>
+                                <td>np100_riboflavin_mg</td>
+                                <td>double precision</td>
+                                <td>total riboflavin amount</td></tr>
+                            <tr>
+                                <td>np100_niacin_mg</td>
+                                <td>double precision</td>
+                                <td>total niacin amount</td></tr>
+                            <tr>
+                                <td>np100_b6_mg</td>
+                                <td>double precision</td>
+                                <td>total b6 amount</td></tr>
+                            <tr>
+                                <td>np100_b12_mcg</td>
+                                <td>double precision</td>
+                                <td>total b12 amount</td></tr>
+                            <tr>
+                                <td>np100_vitamin_c_mg</td>
+                                <td>double precision</td>
+                                <td>total vitamin c amount</td></tr>
+                            <tr>
+                                <td>np100_folic_acid_mcg</td>
+                                <td>double precision</td>
+                                <td>total folic acid amount</td></tr>
+                            <tr>
+                                <td>np100_biotin_mcg</td>
+                                <td>double precision</td>
+                                <td>total biotin amount</td></tr>
+                            <tr>
+                                <td>np100_pantothenic_acid_mg</td>
+                                <td>double precision</td>
+                                <td>total pantothenic acid amount</td></tr>
+                            <tr>
+                                <td>np100_choline_mg</td>
+                                <td>double precision</td>
+                                <td>total choline amount</td></tr>
+                            <tr>
+                                <td>np100_inositol_mg</td>
+                                <td>double precision</td>
+                                <td>total inositol amount</td></tr>
+                            <tr>
+                                <td>np100_sodium_mg</td>
+                                <td>double precision</td>
+                                <td>total sodium amount</td></tr>
+                            <tr>
+                                <td>np100_potassium_mg</td>
+                                <td>double precision</td>
+                                <td>total potassium amount</td></tr>
+                            <tr>
+                                <td>np100_chloride_mg</td>
+                                <td>double precision</td>
+                                <td>total chloride amount</td></tr>
+                            <tr>
+                                <td>np100_calcium_mg</td>
+                                <td>double precision</td>
+                                <td>total calcium amount</td></tr>
+                            <tr>
+                                <td>np100_phosphorus_mg</td>
+                                <td>double precision</td>
+                                <td>total phosphorus amount</td></tr>
+                            <tr>
+                                <td>np100_iron_mg</td>
+                                <td>double precision</td>
+                                <td>total iron amount</td></tr>
+                            <tr>
+                                <td>np100_zinc_mg</td>
+                                <td>double precision</td>
+                                <td>total zinc amount</td></tr>
+                            <tr>
+                                <td>np100_magnesium_mg</td>
+                                <td>double precision</td>
+                                <td>total magnesium amount</td></tr>
+                            <tr>
+                                <td>np100_iodine_mcg</td>
+                                <td>double precision</td>
+                                <td>total iodine amount</td></tr>
+                            <tr>
+                                <td>np100_manganese_mg</td>
+                                <td>double precision</td>
+                                <td>total manganese amount</td></tr>
+                            <tr>
+                                <td>np100_selenium_mcg</td>
+                                <td>double precision</td>
+                                <td>total selenium amount</td></tr>
+                            <tr>
+                                <td>np100_chromium_mcg</td>
+                                <td>double precision</td>
+                                <td>total chromium amount</td></tr>
+                            <tr>
+                                <td>np100_molybdenum_mcg</td>
+                                <td>double precision</td>
+                                <td>total molybdenum amount</td></tr>
+                            <tr>
+                                <td>np100_copper_mg</td>
+                                <td>double precision</td>
+                                <td>total copper amount</td></tr>
+                            <tr>
+                                <td>probiotic</td>
+                                <td>text</td>
+                                <td>total probiotic amount</td></tr>
+                            <tr>
+                                <td>allergens</td>
+                                <td>text</td>
+                                <td>any allergens</td></tr>
+                            <tr>
+                                <td>displacement_ml_per_g</td>
+                                <td>double precision</td>
+                                <td>displacement amount</td></tr>
+                            <tr>
+                                <td>np100_standard_volume</td>
+                                <td>double precision</td>
+                                <td>volume of the fomula</td></tr>
+                            <tr>
+                                <td>npc_percent_free_water</td>
+                                <td>numeric</td>
+                                <td>percentage of water</td></tr>
+                            <tr>
+                                <td>npc_percent_cal_from_cho</td>
+                                <td>numeric</td>
+                                <td>percentage of calories from carbohydrates</td></tr>
+                            <tr>
+                                <td>npc_percent_cal_from_fat</td>
+                                <td>numeric</td>
+                                <td>percentage of calories from fat</td></tr>
+                            <tr>
+                                <td>npc_percent_cal_from_protein</td>
+                                <td>numeric</td>
+                                <td>percentage of calories from protein</td></tr>
+                            <tr>
+                                <td>np100_fluoride_mg</td>
+                                <td>double precision</td>
+                                <td>total fluoride amount</td></tr>
+                            <tr>
+                                <td>np100_fiber_g</td>
+                                <td>double precision</td>
+                                <td>total fiber amount</td></tr>
+                        </table>
                     </div>
                 <br></br>
                 </div>
@@ -316,4 +500,3 @@ const DesignDocument = () => {
 };
 
 export default DesignDocument;
-
