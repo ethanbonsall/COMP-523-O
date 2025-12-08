@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Head from "next/head";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -16,6 +17,12 @@ const Home = () => {
         >
           Download Code
         </a>
+        <Link
+          href="https://github.com/ethanbonsall/Pediatric-Blue-Book"
+          className="text-4xl font-bold text-text hover:text-text-700 transition-colors"
+        >
+          GitHub
+        </Link>
       </main>
     </>
   );
