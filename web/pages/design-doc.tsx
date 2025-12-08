@@ -11,7 +11,7 @@ const DesignDocument = () => {
       <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 p-6 md:p-12">
         <div className="max-w-5xl mx-auto space-y-10">
           <section className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Design Document</h1>
+            <h1 className="text-4xl font-bold mb-4">D5. Design Document</h1>
             <p className="text-lg text-gray-600">
               Explains the core ideas behind the code so a new developer 
               can work with it confidently.
