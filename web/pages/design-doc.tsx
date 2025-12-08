@@ -11,7 +11,7 @@ const DesignDocument = () => {
       <main className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 text-gray-900 p-6 md:p-12">
         <div className="max-w-5xl mx-auto space-y-10">
           <section className="text-center">
-            <h1 className="text-4xl font-bold mb-4">D5. Design Document</h1>
+            <h1 className="text-4xl font-bold mb-4">D2. Design Document</h1>
             <p className="text-lg text-gray-600">
               Explains the core ideas behind the code so a new developer 
               can work with it confidently.
@@ -41,7 +41,8 @@ const DesignDocument = () => {
                 <div className="container mx-auto px-[7%]">
                   <p>
                     <strong>Repository URL:</strong>{" "}
-                    <a href="https://github.com/ethanbonsall/Pediatric-Blue-Book">
+                    <a className="text-blue-500"
+                      href="https://github.com/ethanbonsall/Pediatric-Blue-Book">
                       https://github.com/ethanbonsall/Pediatric-Blue-Book
                     </a>
                   </p>
@@ -58,7 +59,7 @@ const DesignDocument = () => {
                 </h3>
                 <div className="container mx-auto px-[7%]">
                   <h4>
-                    <strong>Tech Stack:</strong>
+                    <strong>Tech Stack</strong>
                   </h4>
                   <ul>
                     <li>
@@ -90,24 +91,35 @@ const DesignDocument = () => {
                   <ul>
                     <li>
                       Clone repository:{" "}
-                      <code>
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
                         git clone
                         https://github.com/ethanbonsall/Pediatric-Blue-Book.git
-                      </code>
+                      </pre>
                     </li>
                     <li>
                       Navigate to web directory:{" "}
-                      <code>cd Pediatric-Blue-Book/web</code>
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
+                        cd pediatric-blue-book
+                      </pre>
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
+                        cd web
+                      </pre>
                     </li>
                     <li>
-                      Install dependencies: <code>npm install</code>
+                      Install dependencies:{" "}
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
+                        npm install --force
+                      </pre>
                     </li>
                     <li>
                       Create <code>.env.local</code> file with Supabase keys
                       inside /web{" "}
                     </li>
                     <li>
-                      Run development server: <code>npm run dev</code>
+                      Run development server:{" "}
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
+                        npm run dev
+                      </pre>
                     </li>
                     <li>
                       The app will be available at{" "}
@@ -124,10 +136,16 @@ const DesignDocument = () => {
                   </p>
                   <ul>
                     <li>
-                      Run tests: <code>npm test</code>
+                      Run tests: {" "}
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
+                        npm test
+                      </pre>
                     </li>
                     <li>
-                      Watch mode: <code>npm run test:watch</code>
+                      Watch mode: {" "}
+                      <pre className="whitespace-pre-wrap bg-gray-100 rounded-md p-3 text-sm font-mono">
+                        npm test:watch
+                      </pre> 
                     </li>
                   </ul>
                 </div>
@@ -199,44 +217,44 @@ const DesignDocument = () => {
                     <strong>Tables:users</strong>
                   </h4>
                   <p>Purpose: User profile information</p>
-                  <table>
-                    <thead>
+                  <table className="w-full border-collapse border border-gray-300 mt-4 mb-6">
+                    <thead className="bg-gray-100">
                       <tr>
-                        <th>Column Name</th>
-                        <th>Data Type</th>
-                        <th>Description</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Column Name</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Data Type</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Description</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>created_at</td>
-                        <td>Timestamp with timezone</td>
-                        <td>Account creation timestamp</td>
+                        <td className="border border-gray-300 px-4 py-2">created_at</td>
+                        <td className="border border-gray-300 px-4 py-2">Timestamp with timezone</td>
+                        <td className="border border-gray-300 px-4 py-2">Account creation timestamp</td>
                       </tr>
                       <tr>
-                        <td>first_name</td>
-                        <td>text</td>
-                        <td>User&apos;s first name</td>
+                        <td className="border border-gray-300 px-4 py-2">first_name</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">User&apos;s first name</td>
                       </tr>
                       <tr>
-                        <td>email</td>
-                        <td>text</td>
-                        <td>User email address</td>
+                        <td className="border border-gray-300 px-4 py-2">email</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">User email address</td>
                       </tr>
                       <tr>
-                        <td>title</td>
-                        <td>text</td>
-                        <td>User title or position</td>
+                        <td className="border border-gray-300 px-4 py-2">title</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">User title or position</td>
                       </tr>
                       <tr>
-                        <td>id</td>
-                        <td>UUID</td>
-                        <td>Primary key, unique user identifier</td>
+                        <td className="border border-gray-300 px-4 py-2">id</td>
+                        <td className="border border-gray-300 px-4 py-2">UUID</td>
+                        <td className="border border-gray-300 px-4 py-2">Primary key, unique user identifier</td>
                       </tr>
                       <tr>
-                        <td>role</td>
-                        <td>text</td>
-                        <td>User role or permissions</td>
+                        <td className="border border-gray-300 px-4 py-2">role</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">User role or permissions</td>
                       </tr>
                     </tbody>
                   </table>
@@ -245,65 +263,65 @@ const DesignDocument = () => {
                     <strong>Tables:nutrient needs</strong>
                   </h4>
                   <p>Purpose: Nutrient requirements for users</p>
-                  <table>
-                    <thead>
+                  <table className="w-full border-collapse border border-gray-300 mt-4 mb-6">
+                    <thead className="bg-gray-100">
                       <tr>
-                        <th>Column Name</th>
-                        <th>Data Type</th>
-                        <th>Description</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Column Name</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Data Type</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Description</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td>id</td>
-                        <td>bigint</td>
-                        <td>nutrient identifier</td>
+                        <td className="border border-gray-300 px-4 py-2">id</td>
+                        <td className="border border-gray-300 px-4 py-2">bigint</td>
+                        <td className="border border-gray-300 px-4 py-2">nutrient identifier</td>
                       </tr>
                       <tr>
-                        <td>created_at</td>
-                        <td>Timestamp with timezone</td>
-                        <td>Timestamp of nutrient added</td>
+                        <td className="border border-gray-300 px-4 py-2">created_at</td>
+                        <td className="border border-gray-300 px-4 py-2">Timestamp with timezone</td>
+                        <td className="border border-gray-300 px-4 py-2">Timestamp of nutrient added</td>
                       </tr>
                       <tr>
-                        <td>nutrient</td>
-                        <td>text</td>
-                        <td>Nutrient name</td>
+                        <td className="border border-gray-300 px-4 py-2">nutrient</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">Nutrient name</td>
                       </tr>
                       <tr>
-                        <td>age_bottom</td>
-                        <td>double precision</td>
-                        <td>Minimum age for nutrient requirement</td>
+                        <td className="border border-gray-300 px-4 py-2">age_bottom</td>
+                        <td className="border border-gray-300 px-4 py-2">double precision</td>
+                        <td className="border border-gray-300 px-4 py-2">Minimum age for nutrient requirement</td>
                       </tr>
                       <tr>
-                        <td>age_top</td>
-                        <td>double precision</td>
-                        <td>Maximum age for nutrient requirement</td>
+                        <td className="border border-gray-300 px-4 py-2">age_top</td>
+                        <td className="border border-gray-300 px-4 py-2">double precision</td>
+                        <td className="border border-gray-300 px-4 py-2">Maximum age for nutrient requirement</td>
                       </tr>
 
                       <tr>
-                        <td>amount</td>
-                        <td>double precision</td>
-                        <td>required amount</td>
+                        <td className="border border-gray-300 px-4 py-2">amount</td>
+                        <td className="border border-gray-300 px-4 py-2">double precision</td>
+                        <td className="border border-gray-300 px-4 py-2">required amount</td>
                       </tr>
                       <tr>
-                        <td>measurement_type</td>
-                        <td>text</td>
-                        <td>Measurement type for nutrient amount</td>
+                        <td className="border border-gray-300 px-4 py-2">measurement_type</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">Measurement type for nutrient amount</td>
                       </tr>
                       <tr>
-                        <td>activity_level</td>
-                        <td>text</td>
-                        <td>Activity level for nutrient requirement</td>
+                        <td className="border border-gray-300 px-4 py-2">activity_level</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">Activity level for nutrient requirement</td>
                       </tr>
                       <tr>
-                        <td>needs_type</td>
-                        <td>text</td>
-                        <td>Type of nutrient required</td>
+                        <td className="border border-gray-300 px-4 py-2">needs_type</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">Type of nutrient required</td>
                       </tr>
                       <tr>
-                        <td>sex</td>
-                        <td>text</td>
-                        <td>Sex of patient</td>
+                        <td className="border border-gray-300 px-4 py-2">sex</td>
+                        <td className="border border-gray-300 px-4 py-2">text</td>
+                        <td className="border border-gray-300 px-4 py-2">Sex of patient</td>
                       </tr>
                     </tbody>
                   </table>
@@ -313,318 +331,321 @@ const DesignDocument = () => {
                   </h4>
                   <p>Purpose: recipe ingredients</p>
                   <p>The ingredient list for the formulas.</p>
-                  <table>
-                    <tr>
-                      <th>Name</th>
-                      <th>Data Type</th>
-                      <th>Description</th>
-                    </tr>
-
-                    <tr>
-                      <td>product</td>
-                      <td>text</td>
-                      <td>Product name</td>
-                    </tr>
-                    <tr>
-                      <td>company_brand</td>
-                      <td>text</td>
-                      <td>Company or brand name</td>
+                  <table className="w-full border-collapse border border-gray-300 mt-4 mb-6">
+                    <thead className="bg-gray-100">
+                      <tr>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Column Name</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Data Type</th>
+                        <th className="border border-gray-300 px-4 py-2 text-left font-semibold">Description</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                      <td className="border border-gray-300 px-4 py-2">product</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Product name</td>
                     </tr>
                     <tr>
-                      <td>age</td>
-                      <td>text</td>
-                      <td>Age group</td>
+                      <td className="border border-gray-300 px-4 py-2">company_brand</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Company or brand name</td>
                     </tr>
                     <tr>
-                      <td>notes</td>
-                      <td>text</td>
-                      <td>any notes</td>
+                      <td className="border border-gray-300 px-4 py-2">age</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Age group</td>
                     </tr>
                     <tr>
-                      <td>id</td>
-                      <td>uuid</td>
-                      <td>id of the product</td>
+                      <td className="border border-gray-300 px-4 py-2">notes</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">any notes</td>
                     </tr>
                     <tr>
-                      <td>active</td>
-                      <td>boolean</td>
-                      <td>if active or not</td>
+                      <td className="border border-gray-300 px-4 py-2">id</td>
+                      <td className="border border-gray-300 px-4 py-2">uuid</td>
+                      <td className="border border-gray-300 px-4 py-2">id of the product</td>
                     </tr>
                     <tr>
-                      <td>approved</td>
-                      <td>boolean</td>
-                      <td>if approved or not</td>
+                      <td className="border border-gray-300 px-4 py-2">active</td>
+                      <td className="border border-gray-300 px-4 py-2">boolean</td>
+                      <td className="border border-gray-300 px-4 py-2">if active or not</td>
                     </tr>
                     <tr>
-                      <td>protein_sources</td>
-                      <td>text</td>
-                      <td>Sources of protein</td>
+                      <td className="border border-gray-300 px-4 py-2">approved</td>
+                      <td className="border border-gray-300 px-4 py-2">boolean</td>
+                      <td className="border border-gray-300 px-4 py-2">if approved or not</td>
                     </tr>
                     <tr>
-                      <td>carbohydrate_sources</td>
-                      <td>text</td>
-                      <td>Sources of carbohydrates</td>
+                      <td className="border border-gray-300 px-4 py-2">protein_sources</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Sources of protein</td>
                     </tr>
                     <tr>
-                      <td>fat_sources</td>
-                      <td>text</td>
-                      <td>Sources of fat</td>
+                      <td className="border border-gray-300 px-4 py-2">carbohydrate_sources</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Sources of carbohydrates</td>
                     </tr>
                     <tr>
-                      <td>prebiotic_sources</td>
-                      <td>text</td>
-                      <td>Sources of prebiotics</td>
+                      <td className="border border-gray-300 px-4 py-2">fat_sources</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Sources of fat</td>
                     </tr>
                     <tr>
-                      <td>probiotic_sources</td>
-                      <td>text</td>
-                      <td>probiotic sources</td>
+                      <td className="border border-gray-300 px-4 py-2">prebiotic_sources</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Sources of prebiotics</td>
                     </tr>
                     <tr>
-                      <td>specialty_ingredients</td>
-                      <td>text</td>
-                      <td>Specialty ingredients</td>
+                      <td className="border border-gray-300 px-4 py-2">probiotic_sources</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">probiotic sources</td>
                     </tr>
                     <tr>
-                      <td>grams_per_scoop</td>
-                      <td>double precision</td>
-                      <td>per scoop amount</td>
+                      <td className="border border-gray-300 px-4 py-2">specialty_ingredients</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">Specialty ingredients</td>
                     </tr>
                     <tr>
-                      <td>grams_per_teaspoon</td>
-                      <td>double precision</td>
-                      <td>per teaspoon amount</td>
+                      <td className="border border-gray-300 px-4 py-2">grams_per_scoop</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">per scoop amount</td>
                     </tr>
                     <tr>
-                      <td>grams_per_tablespoon</td>
-                      <td>double precision</td>
-                      <td>per tablespoon amount</td>
+                      <td className="border border-gray-300 px-4 py-2">grams_per_teaspoon</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">per teaspoon amount</td>
                     </tr>
                     <tr>
-                      <td>grams_per_cup</td>
-                      <td>double precision</td>
-                      <td>per cup amount</td>
+                      <td className="border border-gray-300 px-4 py-2">grams_per_tablespoon</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">per tablespoon amount</td>
                     </tr>
                     <tr>
-                      <td>calories_per_gram</td>
-                      <td>double precision</td>
-                      <td>calories per gram</td>
+                      <td className="border border-gray-300 px-4 py-2">grams_per_cup</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">per cup amount</td>
                     </tr>
                     <tr>
-                      <td>np100_total_protein_g</td>
-                      <td>double precision</td>
-                      <td>total protein amount</td>
+                      <td className="border border-gray-300 px-4 py-2">calories_per_gram</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">calories per gram</td>
                     </tr>
                     <tr>
-                      <td>np100_total_fat_g</td>
-                      <td>double precision</td>
-                      <td>total fat amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_total_protein_g</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total protein amount</td>
                     </tr>
                     <tr>
-                      <td>np100_total_carbohydrate_g</td>
-                      <td>double precision</td>
-                      <td>total carbohydrate amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_total_fat_g</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total fat amount</td>
                     </tr>
                     <tr>
-                      <td>np100_water_ml_standard</td>
-                      <td>double precision</td>
-                      <td>standard water amount in ml</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_total_carbohydrate_g</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total carbohydrate amount</td>
                     </tr>
                     <tr>
-                      <td>np100_vitamin_a_mcg_re</td>
-                      <td>double precision</td>
-                      <td>total vit a amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_water_ml_standard</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">standard water amount in ml</td>
                     </tr>
                     <tr>
-                      <td>np100_vitamin_d_mcg</td>
-                      <td>double precision</td>
-                      <td>total vit d amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_vitamin_a_mcg_re</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total vit a amount</td>
                     </tr>
                     <tr>
-                      <td>np100_vitamin_e_mg</td>
-                      <td>double precision</td>
-                      <td>total vit e amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_vitamin_d_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total vit d amount</td>
                     </tr>
                     <tr>
-                      <td>np100_vitamin_k_mcg</td>
-                      <td>double precision</td>
-                      <td>total vit k amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_vitamin_e_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total vit e amount</td>
                     </tr>
                     <tr>
-                      <td>np100_thiamin_mg</td>
-                      <td>double precision</td>
-                      <td>total thiamin amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_vitamin_k_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total vit k amount</td>
                     </tr>
                     <tr>
-                      <td>np100_riboflavin_mg</td>
-                      <td>double precision</td>
-                      <td>total riboflavin amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_thiamin_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total thiamin amount</td>
                     </tr>
                     <tr>
-                      <td>np100_niacin_mg</td>
-                      <td>double precision</td>
-                      <td>total niacin amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_riboflavin_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total riboflavin amount</td>
                     </tr>
                     <tr>
-                      <td>np100_b6_mg</td>
-                      <td>double precision</td>
-                      <td>total b6 amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_niacin_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total niacin amount</td>
                     </tr>
                     <tr>
-                      <td>np100_b12_mcg</td>
-                      <td>double precision</td>
-                      <td>total b12 amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_b6_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total b6 amount</td>
                     </tr>
                     <tr>
-                      <td>np100_vitamin_c_mg</td>
-                      <td>double precision</td>
-                      <td>total vitamin c amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_b12_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total b12 amount</td>
                     </tr>
                     <tr>
-                      <td>np100_folic_acid_mcg</td>
-                      <td>double precision</td>
-                      <td>total folic acid amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_vitamin_c_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total vitamin c amount</td>
                     </tr>
                     <tr>
-                      <td>np100_biotin_mcg</td>
-                      <td>double precision</td>
-                      <td>total biotin amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_folic_acid_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total folic acid amount</td>
                     </tr>
                     <tr>
-                      <td>np100_pantothenic_acid_mg</td>
-                      <td>double precision</td>
-                      <td>total pantothenic acid amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_biotin_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total biotin amount</td>
                     </tr>
                     <tr>
-                      <td>np100_choline_mg</td>
-                      <td>double precision</td>
-                      <td>total choline amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_pantothenic_acid_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total pantothenic acid amount</td>
                     </tr>
                     <tr>
-                      <td>np100_inositol_mg</td>
-                      <td>double precision</td>
-                      <td>total inositol amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_choline_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total choline amount</td>
                     </tr>
                     <tr>
-                      <td>np100_sodium_mg</td>
-                      <td>double precision</td>
-                      <td>total sodium amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_inositol_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total inositol amount</td>
                     </tr>
                     <tr>
-                      <td>np100_potassium_mg</td>
-                      <td>double precision</td>
-                      <td>total potassium amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_sodium_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total sodium amount</td>
                     </tr>
                     <tr>
-                      <td>np100_chloride_mg</td>
-                      <td>double precision</td>
-                      <td>total chloride amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_potassium_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total potassium amount</td>
                     </tr>
                     <tr>
-                      <td>np100_calcium_mg</td>
-                      <td>double precision</td>
-                      <td>total calcium amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_chloride_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total chloride amount</td>
                     </tr>
                     <tr>
-                      <td>np100_phosphorus_mg</td>
-                      <td>double precision</td>
-                      <td>total phosphorus amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_calcium_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total calcium amount</td>
                     </tr>
                     <tr>
-                      <td>np100_iron_mg</td>
-                      <td>double precision</td>
-                      <td>total iron amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_phosphorus_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total phosphorus amount</td>
                     </tr>
                     <tr>
-                      <td>np100_zinc_mg</td>
-                      <td>double precision</td>
-                      <td>total zinc amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_iron_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total iron amount</td>
                     </tr>
                     <tr>
-                      <td>np100_magnesium_mg</td>
-                      <td>double precision</td>
-                      <td>total magnesium amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_zinc_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total zinc amount</td>
                     </tr>
                     <tr>
-                      <td>np100_iodine_mcg</td>
-                      <td>double precision</td>
-                      <td>total iodine amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_magnesium_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total magnesium amount</td>
                     </tr>
                     <tr>
-                      <td>np100_manganese_mg</td>
-                      <td>double precision</td>
-                      <td>total manganese amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_iodine_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total iodine amount</td>
                     </tr>
                     <tr>
-                      <td>np100_selenium_mcg</td>
-                      <td>double precision</td>
-                      <td>total selenium amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_manganese_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total manganese amount</td>
                     </tr>
                     <tr>
-                      <td>np100_chromium_mcg</td>
-                      <td>double precision</td>
-                      <td>total chromium amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_selenium_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total selenium amount</td>
                     </tr>
                     <tr>
-                      <td>np100_molybdenum_mcg</td>
-                      <td>double precision</td>
-                      <td>total molybdenum amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_chromium_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total chromium amount</td>
                     </tr>
                     <tr>
-                      <td>np100_copper_mg</td>
-                      <td>double precision</td>
-                      <td>total copper amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_molybdenum_mcg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total molybdenum amount</td>
                     </tr>
                     <tr>
-                      <td>probiotic</td>
-                      <td>text</td>
-                      <td>total probiotic amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_copper_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total copper amount</td>
                     </tr>
                     <tr>
-                      <td>allergens</td>
-                      <td>text</td>
-                      <td>any allergens</td>
+                      <td className="border border-gray-300 px-4 py-2">probiotic</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">total probiotic amount</td>
                     </tr>
                     <tr>
-                      <td>displacement_ml_per_g</td>
-                      <td>double precision</td>
-                      <td>displacement amount</td>
+                      <td className="border border-gray-300 px-4 py-2">allergens</td>
+                      <td className="border border-gray-300 px-4 py-2">text</td>
+                      <td className="border border-gray-300 px-4 py-2">any allergens</td>
                     </tr>
                     <tr>
-                      <td>np100_standard_volume</td>
-                      <td>double precision</td>
-                      <td>volume of the fomula</td>
+                      <td className="border border-gray-300 px-4 py-2">displacement_ml_per_g</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">displacement amount</td>
                     </tr>
                     <tr>
-                      <td>npc_percent_free_water</td>
-                      <td>numeric</td>
-                      <td>percentage of water</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_standard_volume</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">volume of the fomula</td>
                     </tr>
                     <tr>
-                      <td>npc_percent_cal_from_cho</td>
-                      <td>numeric</td>
-                      <td>percentage of calories from carbohydrates</td>
+                      <td className="border border-gray-300 px-4 py-2">npc_percent_free_water</td>
+                      <td className="border border-gray-300 px-4 py-2">numeric</td>
+                      <td className="border border-gray-300 px-4 py-2">percentage of water</td>
                     </tr>
                     <tr>
-                      <td>npc_percent_cal_from_fat</td>
-                      <td>numeric</td>
-                      <td>percentage of calories from fat</td>
+                      <td className="border border-gray-300 px-4 py-2">npc_percent_cal_from_cho</td>
+                      <td className="border border-gray-300 px-4 py-2">numeric</td>
+                      <td className="border border-gray-300 px-4 py-2">percentage of calories from carbohydrates</td>
                     </tr>
                     <tr>
-                      <td>npc_percent_cal_from_protein</td>
-                      <td>numeric</td>
-                      <td>percentage of calories from protein</td>
+                      <td className="border border-gray-300 px-4 py-2">npc_percent_cal_from_fat</td>
+                      <td className="border border-gray-300 px-4 py-2">numeric</td>
+                      <td className="border border-gray-300 px-4 py-2">percentage of calories from fat</td>
                     </tr>
                     <tr>
-                      <td>np100_fluoride_mg</td>
-                      <td>double precision</td>
-                      <td>total fluoride amount</td>
+                      <td className="border border-gray-300 px-4 py-2">npc_percent_cal_from_protein</td>
+                      <td className="border border-gray-300 px-4 py-2">numeric</td>
+                      <td className="border border-gray-300 px-4 py-2">percentage of calories from protein</td>
                     </tr>
                     <tr>
-                      <td>np100_fiber_g</td>
-                      <td>double precision</td>
-                      <td>total fiber amount</td>
+                      <td className="border border-gray-300 px-4 py-2">np100_fluoride_mg</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total fluoride amount</td>
                     </tr>
+                    <tr>
+                      <td className="border border-gray-300 px-4 py-2">np100_fiber_g</td>
+                      <td className="border border-gray-300 px-4 py-2">double precision</td>
+                      <td className="border border-gray-300 px-4 py-2">total fiber amount</td>
+                    </tr>
+                    </tbody> 
                   </table>
                 </div>
                 <br></br>
