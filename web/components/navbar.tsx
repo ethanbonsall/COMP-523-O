@@ -92,10 +92,9 @@ export default function Navbar() {
               Client Handoff Document
             </Link>
             <hr />
-            <Link
-              href="/code"
-              className="hover:bg-secondary-400 p-2 rounded"
-            ></Link>
+            <Link href="/code" className="hover:bg-secondary-400 p-2 rounded">
+              Download Code
+            </Link>
           </div>
         </div>
 
