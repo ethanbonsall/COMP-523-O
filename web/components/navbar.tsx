@@ -74,6 +74,12 @@ export default function Navbar() {
             </Link>
             <hr />
             <Link
+              href="/design-doc"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              D5. Design Document
+            </Link>
+            <Link
               href="/architecture-diagram"
               className="hover:bg-secondary-400 p-2 rounded"
             >
