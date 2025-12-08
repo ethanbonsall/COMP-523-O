@@ -37,10 +37,10 @@ export default function Navbar() {
             </Link>
             <hr />
             <Link
-              href="/platform-evaluation"
+              href="/design-doc"
               className="hover:bg-secondary-400 p-2 rounded"
             >
-              D2. Platform Specifications
+              D2. Design Document
             </Link>
             <hr />
             <Link
@@ -57,11 +57,8 @@ export default function Navbar() {
               D4. User Manual
             </Link>
             <hr />
-            <Link
-              href="/design-doc"
-              className="hover:bg-secondary-400 p-2 rounded"
-            >
-              D5. Design Document
+            <Link href="/code" className="hover:bg-secondary-400 p-2 rounded">
+              D5. Code
             </Link>
             <hr />
             <Link
@@ -69,6 +66,13 @@ export default function Navbar() {
               className="hover:bg-secondary-400 p-2 rounded"
             >
               Architecture Diagram
+            </Link>
+            <hr />
+            <Link
+              href="/platform-evaluation"
+              className="hover:bg-secondary-400 p-2 rounded"
+            >
+              Platform Specifications
             </Link>
             <hr />
             <Link
@@ -92,9 +96,6 @@ export default function Navbar() {
               Client Handoff Document
             </Link>
             <hr />
-            <Link href="/code" className="hover:bg-secondary-400 p-2 rounded">
-              Download Code
-            </Link>
           </div>
         </div>
 
