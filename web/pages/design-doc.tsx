@@ -1,5 +1,6 @@
 import Navbar from "@/components/navbar";
 import Head from "next/head";
+import Image from "next/image";
 const DesignDocument = () => {
   return (
     <>
@@ -15,17 +16,14 @@ const DesignDocument = () => {
               Design Document
             </h1>
           </section>
-
-          <section className="bg-white shadow-lg rounded-2xl p-6 md:p-10 space-y-6">
+          <section className="bg-white shadow-lg rounded-2xl p-6 md:p-10 space-y-6"> 
             <div>
-                <h2 className="text-2xl font-semibold">1: Architecture</h2>
                 <div className="container mx-auto px-[5%]">
-                    <img src = "/images/Arch-Diagram-updated.png" alt = "Architecture Diagram"></img>
-                </div>
-                <br></br>
-              </div>
-
-              <div>
+                        <Image src="/images/Arch-Diagram-updated.jpg" alt="Architecture Diagram" width={800} height={600} />
+                    </div>
+            </div>
+            <br></br>
+            <div>
                 <h2 className="text-2xl font-semibold">2. Code Repository and README </h2>
                 <div className="container mx-auto px-[0.2%]">
                     <h3 className="font-semibold text-xl mb-2">2.1: Repository Information</h3>
@@ -67,7 +65,7 @@ const DesignDocument = () => {
                     <br></br>
                     <h3 className="font-semibold text-xl mb-2">2.3: Module Structure</h3>
                     <div className="container mx-auto px-[7%]">
-                      <img src = "/images/modules.png" alt = "modules"></img>
+                      <Image src="/images/modules.jpg" alt="modules" width={800} height={600} />
                       <h4><strong>Module relationships</strong></h4>
                       <ul>
                             <li><strong>pages/</strong> (index.tsx, admin.tsx, profile.tsx) import <strong>components/ui/</strong> to build page UI</li>
@@ -81,17 +79,11 @@ const DesignDocument = () => {
                             <li><strong>Styling</strong> uses Tailwind CSS (configured in tailwind.config.ts)</li>
                       </ul>
                     </div> 
-                <br></br>
-
                 </div>
-              </div>
-
-              <div>
                 <h2 className="text-2xl font-semibold">3. Detailed Data Definitions </h2>
                 <div className="container mx-auto px-[5%]">
                     <h3 className="font-semibold text-xl mb-2">Database Schema</h3>
                     <div className="container mx-auto px-[7%]">
-                        <h4><strong>Tables:users</strong></h4>
                         <p>Purpose: User profile information</p>
                         <table>
                             <thead>
@@ -110,7 +102,7 @@ const DesignDocument = () => {
                                 <tr>
                                     <td>first_name</td>
                                     <td>text</td>
-                                    <td>User's first name</td>
+                                    <td>Users first name</td>
                                 </tr>
                                 <tr>
                                     <td>email</td>
@@ -204,6 +196,7 @@ const DesignDocument = () => {
                         <p>Purpose: recipe ingredients</p>
                         <p>The ingredient list for the formulas.</p>
                         <table>
+                            <tbody>
                             <tr>
                                 <th>Name</th>
                                 <th>Data Type</th>
@@ -453,13 +446,10 @@ const DesignDocument = () => {
                                 <td>np100_fiber_g</td>
                                 <td>double precision</td>
                                 <td>total fiber amount</td></tr>
+                            </tbody>
                         </table>
                     </div>
-                <br></br>
                 </div>
-              </div>
-
-              <div>
                 <h2 className="text-2xl font-semibold">4. Design Rationale </h2>
                 <div className="container mx-auto px-[5%]">
                     <h3 className="font-semibold text-xl mb-2">4.1: Technology choices</h3>
@@ -491,9 +481,9 @@ const DesignDocument = () => {
                         <p>Next.js ^14, React ^18, TypeScript ^5, Supabase Client ^2.38, Tailwind CSS ^3.3, Zod ^3.22, Jest ^29 — chosen for stability, team familiarity, and features needed for secure, testable medical calculations.</p>
                     </div>
                 </div>
-              </div>
+            </div>
           </section> 
-        </div>
+          </div>
       </main>
     </>
   );
